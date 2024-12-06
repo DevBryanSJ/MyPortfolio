@@ -23,9 +23,9 @@ export default function HeroSection(){
                             {text.heroSection.name}
                         </span>
                     </h1>
-                    <h2 className="text-h2 font-semibold">
+                    <h2 className="text-h2 font-semibold text-purple-300">
                         {text.heroSection.role}
-                        <span>
+                        <span className=" text-gray-100">
                             {text.heroSection.dev}
                         </span>
                     </h2>
