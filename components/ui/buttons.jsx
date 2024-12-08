@@ -4,8 +4,8 @@ import styled from 'styled-components';
 export const SpaceButton = ({ children }) => {
   return (
     <StyledWrapper>
-      <button type="button" className="btn py-3 px-6 flex flex-row w-auto group lg:mt-5">
-        <strong className='w-auto flex flex-row items-center gap-x-2 md:-mt-1'>{children}</strong>
+      <button type="button" className="btn py-3 px-6 flex flex-row w-auto group mt-1 sm:mt-5 md:mt-5 lg:mt-5 transform scale-75 sm:scale-90 ">
+        <strong className='w-auto flex flex-row items-center gap-x-2 -mt-1'>{children}</strong>
         <div id="container-stars">
           <div id="stars" />
         </div>
@@ -56,7 +56,7 @@ const StyledWrapper = styled.div`
     z-index: 2;
     font-size: 1.10rem;
     letter-spacing: 2px;
-    color: #ffffff;
+    color: #f7f7f7;
     text-shadow: 0 0 4px white;
   }
 
@@ -87,8 +87,20 @@ const StyledWrapper = styled.div`
     background-color: #212121;
   }
 
-  .btn:hover {
-    transform: scale(1.1);
+    .btn:hover {
+    transform: scale(1.1); // Valor por defecto
+  }
+
+  @media (max-width: 640px) { // Pantallas "sm" y menores
+    .btn:hover {
+      transform: scale(1.0); // Escala para pantallas "sm"
+    }
+  }
+
+  @media (max-width: 480px) { // Pantallas "xs"
+    .btn:hover {
+      transform: scale(0.90); // Escala para pantallas "xs"
+    }
   }
 
   .btn:active {

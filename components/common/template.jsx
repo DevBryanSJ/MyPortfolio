@@ -19,22 +19,22 @@ export default function HeroSection(){
 
     return (
         <>
-            <div className="w-full h-screen flex items-start p-10 overflow-hidden bg-[#060108]">
-                <div className="flex flex-col items-start h-full w-[60vw] lg:ml-[4%]  justify-center text-gray-100 z-20 bg-gradient-to-r from-[#060108] from-70%">
-                    <h1 className="lg:text-[4rem] xl:text-[5rem]  font-extrabold">
+            <div className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-hidden bg-[#060108]">
+                <div className="flex flex-col items-start h-screen w-full pl-[15vw] sm:pl-0 gap-y-2 sm:gap-y-0 sm:w-[80vw] md:w-[60vw] lg:ml-[5%] justify-center text-gray-100 z-20 bg-gradient-to-r from-[#060108] from-20% sm:from-50% md:from-40% lg:from-70%">
+                    <h1 className="lg:text-[4rem] text-h4 sm:text-h3 md:text-h2 xl:text-[5rem]  font-extrabold">
                         {text.heroSection.intro}
                         <span className="text-purple-300">
                             {text.heroSection.name}
                         </span>
                     </h1>
-                    <h2 className="text-h3 font-semibold">
+                    <h2 className="text-h6 sm:text-h5 font-semibold">
                         {text.heroSection.iam}
                         <span className="text-purple-300">
                             {text.heroSection.role}
                         </span>
                         {text.heroSection.dev}
                     </h2>
-                    <p className="text-p font-medium lg:max-w-[60%]">
+                    <p className="text-sm1 md:text-p font-medium max-w-[70%] sm:max-w-[60%] lg:max-w-[60%]">
                         {text.heroSection.description}
                     </p>
                     <SpaceButton>
@@ -51,10 +51,10 @@ export default function HeroSection(){
                         </svg>
                     </SpaceButton>
                 </div>
-                <div className="absolute inset-0 ml-auto h-full lg:w-[60vw] flex justify-end items-center">
+                <div className="absolute inset-0 ml-auto h-full w-[80vw] sm:w-[60vw] md:w-[60vw] flex justify-end items-center">
                     <video 
                         src="https://cdn.pixabay.com/video/2024/09/03/229467_large.mp4" autoPlay loop muted
-                        className="object-cover w-full h-full opacity-80 filter brightness-125"
+                        className="object-cover w-full h-full opacity-90 md:opacity-70 lg:opacity-90 filter brightness-110 sm:brightness-125"
                     />
                 </div>
             </div>

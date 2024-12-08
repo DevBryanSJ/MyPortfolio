@@ -29,8 +29,8 @@ module.exports = {
       'h5': '1.563rem', 
       'h6': '1.25rem',  
       'p': '1rem',  
-      'small-1': '0.8rem', 
-      'small-2': '0.64rem',   
+      'sm1': '0.8rem', 
+      'sm2': '0.64rem',   
     }, 
   },
   plugins: [
