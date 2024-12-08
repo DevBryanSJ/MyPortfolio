@@ -1,6 +1,7 @@
 "use client";
 
 //imports
+import { SpaceButton } from "../ui/buttons";
 
 const text = {
     heroSection: {
@@ -33,12 +34,22 @@ export default function HeroSection(){
                         </span>
                         {text.heroSection.dev}
                     </h2>
-                    <p className="text-p font-semibold lg:max-w-[60%]">
+                    <p className="text-p font-medium lg:max-w-[60%]">
                         {text.heroSection.description}
                     </p>
-                    <button className="btn btn-ghost lg:btn-lg hover:bg-purple-300 hover:bg-opacity-70 rounded-full">
+                    <SpaceButton>
                         {text.heroSection.contact}
-                    </button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" className="transform group-hover:translate-x-2 transition-all ease-in-out duration-200">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/>
+                                </path>
+                                <path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/>
+                                </path>
+                            </g>
+                        </svg>
+                    </SpaceButton>
                 </div>
                 <div className="absolute inset-0 ml-auto h-full lg:w-[60vw] flex justify-end items-center">
                     <video 
