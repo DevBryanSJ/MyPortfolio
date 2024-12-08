@@ -1,11 +1,14 @@
 import { GridBackgroundDemo } from "@/components/common/gridBackground";
-import HeroSection from "@/components/common/template";
+import HeroSection, { About } from "@/components/common/template";
 
 export default function Home() { 
 
   return (
     <>
-      <HeroSection />
+      <div className="w-full h-auto">
+        <HeroSection />
+        <About />
+      </div>
     </>
   );
 }
