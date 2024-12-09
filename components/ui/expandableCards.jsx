@@ -63,7 +63,7 @@ export function ExpandableCardDemo() {
           <motion.div
             layoutId={`card-${active.title}-${id}`}
             ref={ref}
-            className="w-full max-w-[80vw] sm:max-w-[70vw] md:max-w-[50vw]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-700 sm:rounded-3xl overflow-hidden">
+            className="w-full max-w-[80vw] sm:max-w-[70vw] md:max-w-[50vw]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 sm:rounded-3xl overflow-hidden">
             <motion.div layoutId={`image-${active.title}-${id}`}>
               <Image
                 priority
@@ -118,15 +118,15 @@ export function ExpandableCardDemo() {
       ) : null}
     </AnimatePresence>
     <ul
-      className="mx-auto lg:w-[70vw] flex flex-row flex-wrap items-center justify-center gap-10">
+      className="mx-auto w-[70vw] lg:w-[70vw] flex flex-row flex-wrap items-center justify-center gap-10">
       {cards.map((card, index) => (
         <motion.div
           layoutId={`card-${card.title}-${id}`}
           key={card.title}
           onClick={() => setActive(card)}
-          className="p-4 flex flex-col w-[45%] bg-neutral-700 rounded-xl cursor-pointer">
+          className=" flex flex-col w-full lg:w-[45%] lg:h-[450px] bg-neutral-900 bg-opacity-70 rounded-xl cursor-pointer">
           <div className="flex gap-4 flex-col  w-full">
-            <motion.div layoutId={`image-${card.title}-${id}`}>
+            <motion.div layoutId={`image-${card.title}-${id}`} className="w-full">
               <Image
                 width={100}
                 height={100}
