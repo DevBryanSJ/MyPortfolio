@@ -1,7 +1,7 @@
 "use client";
 
 //imports
-import { SpaceButton, IconBtn, SocialButtons } from "../ui/buttons";
+import { SpaceButton, IconBtn } from "../ui/buttons";
 
 const text = {
     connect: {
