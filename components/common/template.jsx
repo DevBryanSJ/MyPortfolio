@@ -2,6 +2,7 @@
 
 //imports
 import { SpaceButton, IconBtn } from "../ui/buttons";
+import { ExpandableCardDemo } from "../ui/expandableCards";
 
 const text = {
     connect: {
@@ -247,12 +248,12 @@ export function Projects() {
         <>
             <section className="w-full h-auto flex flex-col items-center justify-center">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
-                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="w-full h-auto">
-                    
+                    <ExpandableCardDemo />
                 </div>
             </section>
         </>
