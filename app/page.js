@@ -1,5 +1,5 @@
 import { GridBackgroundDemo } from "@/components/common/gridBackground";
-import HeroSection, { About } from "@/components/common/template";
+import HeroSection, { About, Projects } from "@/components/common/template";
 
 export default function Home() { 
 
@@ -8,6 +8,7 @@ export default function Home() {
       <div className="w-full h-auto">
         <HeroSection />
         <About />
+        <Projects />
       </div>
     </>
   );

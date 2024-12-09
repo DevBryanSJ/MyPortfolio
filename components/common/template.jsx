@@ -18,7 +18,7 @@ const text = {
         x: {
             name: 'x',
             link: "https://x.com/BSigala16", 
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clip-path="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clipPath="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
         }, 
     },
     heroSection: {
@@ -59,7 +59,7 @@ const text = {
             },
             js: {
                 name: "JavaScript", 
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><g clip-path="url(#akarIconsJavascriptFill0)"><path fill="currentColor" fill-rule="evenodd" d="M0 0h24v24H0zm18.347 20.12c-1.113 0-1.742-.58-2.225-1.37l-1.833 1.065c.662 1.308 2.015 2.306 4.11 2.306c2.142 0 3.737-1.112 3.737-3.143c0-1.883-1.082-2.72-2.998-3.543l-.564-.241c-.968-.42-1.387-.693-1.387-1.37c0-.547.42-.966 1.08-.966c.647 0 1.064.273 1.451.966l1.756-1.127c-.743-1.307-1.773-1.806-3.207-1.806c-2.014 0-3.303 1.288-3.303 2.98c0 1.835 1.08 2.704 2.708 3.397l.564.242c1.029.45 1.642.724 1.642 1.497c0 .646-.597 1.113-1.531 1.113m-8.74-.015c-.775 0-1.098-.53-1.452-1.16l-1.836 1.112c.532 1.126 1.578 2.06 3.383 2.06c1.999 0 3.368-1.063 3.368-3.398v-7.7h-2.255v7.67c0 1.127-.468 1.416-1.209 1.416" clip-rule="evenodd"/></g><defs><clipPath id="akarIconsJavascriptFill0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>, 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><g clipPath="url(#akarIconsJavascriptFill0)"><path fill="currentColor" fillRule="evenodd" d="M0 0h24v24H0zm18.347 20.12c-1.113 0-1.742-.58-2.225-1.37l-1.833 1.065c.662 1.308 2.015 2.306 4.11 2.306c2.142 0 3.737-1.112 3.737-3.143c0-1.883-1.082-2.72-2.998-3.543l-.564-.241c-.968-.42-1.387-.693-1.387-1.37c0-.547.42-.966 1.08-.966c.647 0 1.064.273 1.451.966l1.756-1.127c-.743-1.307-1.773-1.806-3.207-1.806c-2.014 0-3.303 1.288-3.303 2.98c0 1.835 1.08 2.704 2.708 3.397l.564.242c1.029.45 1.642.724 1.642 1.497c0 .646-.597 1.113-1.531 1.113m-8.74-.015c-.775 0-1.098-.53-1.452-1.16l-1.836 1.112c.532 1.126 1.578 2.06 3.383 2.06c1.999 0 3.368-1.063 3.368-3.398v-7.7h-2.255v7.67c0 1.127-.468 1.416-1.209 1.416" clipRule="evenodd"/></g><defs><clipPath id="akarIconsJavascriptFill0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>, 
             }, 
             react: {
                 name: "React", 
@@ -106,6 +106,9 @@ const text = {
             }, 
         }, 
     },
+    projects: {
+        title: "Projects",
+    }, 
 }
 
 export default function HeroSection(){
@@ -232,6 +235,24 @@ export function About(){
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Projects() {
+
+    return (
+        <>
+            <section className="w-full h-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="w-full h-auto">
+                    
                 </div>
             </section>
         </>
