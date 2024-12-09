@@ -159,69 +159,71 @@ export function About(){
 
     return(
         <>
-            <section className="w-full h-screen flex flex-col items-center justify-center">
-                <div className="flex flex-row w-[70vw] h-[10vh] p-5 gap-10 items-center justify-center ">
-                    <h2 className="text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
+            <section className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
-                <div className="flex flex-row w-[70vw] h-auto items-center justify-around ">
-                    <div className="flex flex-row justify-start items-center h-auto p-5 gap-10">
-                        <div className="flex flex-col lg:w-[55%] h-auto text-[1.05rem] font-medium text-gray-50 gap-y-5">
+                <div className="flex flex-row w-[85vw] lg:w-[70vw] h-auto items-center justify-around ">
+                    <div className="flex flex-col md:flex-row justify-start items-center h-auto p-5 gap-10">
+                        <div className="flex flex-col w-full md:w-[55%] h-auto text-sm1 md:text-[0.9rem] lg:text-[1.05rem] font-medium text-gray-50 gap-y-5">
                             <div className="w-full h-auto flex flex-col gap-y-4">
                                 {Object.values(text.about.description).map((p, index) => (
                                     <p key={index}>{p}</p>
                                 ))}
                             </div>
                             <div className="flex flex-row items-center justify-start gap-3">
-                                <p className="flex flex-row text-purple-300 font-semibold gap-x-3">
+                                <p className="flex flex-row text-purple-300 font-semibold gap-x-1 md:gap-x-3 items-center">
                                     {text.about.connect_intro}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                            <path stroke-dasharray="20" stroke-dashoffset="20" d="M3 12h17.5">
+                                        <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+                                            <path strokeDasharray="20" strokeDashoffset="20" d="M3 12h17.5">
                                                 <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/>
                                             </path>
-                                            <path stroke-dasharray="12" stroke-dashoffset="12" d="M21 12l-7 7M21 12l-7 -7">
+                                            <path strokeDasharray="12" strokeDashoffset="12" d="M21 12l-7 7M21 12l-7 -7">
                                                 <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/>
                                             </path>
                                         </g>
                                     </svg>
                                 </p>
-                                <div className="flex flex-row gap-0 items-center w-auto h-auto">
+                                <div className="flex flex-row -space-x-3 md:space-x-0 md:gap-0 items-center w-auto h-auto">
                                     <IconBtn name={text.connect.linkedin.name} link={text.connect.linkedin.link} icon={text.connect.linkedin.icon} />
                                     <IconBtn name={text.connect.github.name} link={text.connect.github.link} icon={text.connect.github.icon} />
                                     <IconBtn name={text.connect.x.name} link={text.connect.x.link} icon={text.connect.x.icon} />
                                 </div>
                             </div>
                         </div>
-                        <div className="flex flex-col w-[40%] h-full p-5  text-gray-50 ">
+                        <div className="flex flex-col w-full md:w-[40%] h-full md:p-5  text-gray-50 ">
                             <div className="flex flex-col items-center justify-center gap-y-10">
                                 <div className="flex flex-col w-full justify-start items-start gap-y-5">
-                                    <h5 className="text-h5 font-bold flex flex-row items-center gap-x-2">
+                                    <h5 className="text-h6 lg:text-h5 font-bold flex flex-row items-center gap-x-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024" className="text-purple-300">
                                             <path fill="currentColor" 
                                                 d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32M513.1 518.1l-192 161c-5.2 4.4-13.1.7-13.1-6.1v-62.7c0-2.3 1.1-4.6 2.9-6.1L420.7 512l-109.8-92.2a7.63 7.63 0 0 1-2.9-6.1V351c0-6.8 7.9-10.5 13.1-6.1l192 160.9c3.9 3.2 3.9 9.1 0 12.3M716 673c0 4.4-3.4 8-7.5 8h-185c-4.1 0-7.5-3.6-7.5-8v-48c0-4.4 3.4-8 7.5-8h185c4.1 0 7.5 3.6 7.5 8z"/>
                                         </svg>
                                         {text.about.toolsTitle}
                                     </h5>
-                                    <div className="flex flex-row flex-wrap gap-2 w-full h-auto">
+                                    <div className="flex flex-row flex-wrap gap-1 lg:gap-2 w-full h-auto">
                                         {Object.values(text.about.workTools).map((tool, index) => (
-                                            <span key={index} className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-x-2">
+                                            <span key={index} 
+                                                className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-2 transform scale-90 lg:scale-100">
                                                 {tool.icon}{tool.name}
                                             </span>
                                         ))}
                                     </div>
                                 </div>
                                 <div className="flex flex-col w-full justify-start items-start gap-y-5">
-                                    <h5 className="text-h5 font-bold flex flex-row items-center gap-x-2">
+                                    <h5 className="text-h6 lg:text-h5 font-bold flex flex-row items-center gap-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 384 512" className="text-purple-300">
                                         <path fill="currentColor" 
                                             d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c19.8 27.1 39.7 54.4 49.2 86.2h160zm-80 128c44.2 0 80-35.8 80-80v-16H112v16c0 44.2 35.8 80 80 80m-80-336c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80"/>
                                     </svg>
                                         {text.about.additionalTitle}
                                     </h5>
-                                    <div className="flex flex-row flex-wrap gap-2 w-full h-auto">
+                                    <div className="flex flex-row flex-wrap gap-1 lg:gap-2 w-full h-auto">
                                         {Object.values(text.about.additionalTools).map((tool, index) => (
-                                            <span key={index} className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-x-2">
+                                            <span key={index} 
+                                                className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-2 transform scale-90 lg:scale-100">
                                                 {tool.icon}{tool.name}
                                             </span>
                                         ))}

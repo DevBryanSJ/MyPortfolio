@@ -223,7 +223,7 @@ export function IconBtn({ name, link, icon }){
 
   return(
     <>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <a href={link} className='transform scale-75 md:scale-100' target="_blank" rel="noopener noreferrer">
         <StyledWrapper2>
           <div className="socialcontainer">
             <div className={styleBtn()}>
