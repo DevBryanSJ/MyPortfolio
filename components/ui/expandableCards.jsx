@@ -40,7 +40,7 @@ export function ExpandableCardDemo() {
     </AnimatePresence>
     <AnimatePresence>
       {active && typeof active === "object" ? (
-        <div className="fixed inset-0  grid place-items-center z-[100]">
+        <div className="fixed inset-0 grid place-items-center z-[100] overflow-auto will-change-scroll">
           <motion.button
             key={`button-${active.title}-${id}`}
             layout
@@ -63,7 +63,7 @@ export function ExpandableCardDemo() {
           <motion.div
             layoutId={`card-${active.title}-${id}`}
             ref={ref}
-            className="w-full max-w-[80vw] sm:max-w-[70vw] md:max-w-[50vw]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 sm:rounded-3xl overflow-hidden">
+            className="w-full max-w-[80vw] sm:max-w-[70vw] md:max-w-[50vw] h-auto   flex flex-col bg-neutral-900 sm:rounded-3xl">
             <motion.div layoutId={`image-${active.title}-${id}`}>
               <Image
                 priority
@@ -106,7 +106,7 @@ export function ExpandableCardDemo() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="text-neutral-200 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
+                  className="text-neutral-200 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]">
                   {typeof active.content === "function"
                     ? active.content()
                     : active.content}
@@ -194,17 +194,30 @@ const cards = [
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
-        (<p>Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-                    her melancholic and cinematic music style. Born Elizabeth Woolridge
-                    Grant in New York City, she has captivated audiences worldwide with
-                    her haunting voice and introspective lyrics. <br /> <br />Her songs
-                    often explore themes of tragic romance, glamour, and melancholia,
-                    drawing inspiration from both contemporary and vintage pop culture.
-                    With a career that has seen numerous critically acclaimed albums, Lana
-                    Del Rey has established herself as a unique and influential figure in
-                    the music industry, earning a dedicated fan base and numerous
-                    accolades.
-                  </p>)
+        (<>
+            <p>Lana Del Rey, an iconic American singer-songwriter, is celebrated for
+                her melancholic and cinematic music style. Born Elizabeth Woolridge
+                Grant in New York City, she has captivated audiences worldwide with
+                her haunting voice and introspective lyrics. <br /> <br />Her songs
+                often explore themes of tragic romance, glamour, and melancholia,
+                drawing inspiration from both contemporary and vintage pop culture.
+                With a career that has seen numerous critically acclaimed albums, Lana
+                Del Rey has established herself as a unique and influential figure in
+                the music industry, earning a dedicated fan base and numerous
+                accolades.
+                </p>
+                <p>Lana Del Rey, an iconic American singer-songwriter, is celebrated for
+                her melancholic and cinematic music style. Born Elizabeth Woolridge
+                Grant in New York City, she has captivated audiences worldwide with
+                her haunting voice and introspective lyrics. <br /> <br />Her songs
+                often explore themes of tragic romance, glamour, and melancholia,
+                drawing inspiration from both contemporary and vintage pop culture.
+                With a career that has seen numerous critically acclaimed albums, Lana
+                Del Rey has established herself as a unique and influential figure in
+                the music industry, earning a dedicated fan base and numerous
+                accolades.
+            </p>
+        </>)
       );
     },
   },
