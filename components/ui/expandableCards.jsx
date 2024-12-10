@@ -4,6 +4,28 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/app/hooks/useOutsideClick";
 
+const content = {
+    action: "Read more ",
+    projects: [
+        {
+            name: "Project Name Here", 
+            img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+            skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+            intro: "Desarrollé esta aplicación educativa para descubrir exoplanetas, combinando diseño intuitivo y datos científicos en tiempo real. ¡Aprender nunca fue tan fascinante!", 
+            description: [
+                "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+            ],
+            links: {
+                intro: "Project Links ",
+                gitHubLink: 'https://github.com/StellarDBryan', 
+                deployLink: 'citc.vercel.app', 
+            }
+        },
+    ]
+}
+
 export function ExpandableCardDemo() {
   const [active, setActive] = useState(null);
   const id = useId();
@@ -80,7 +102,7 @@ export function ExpandableCardDemo() {
                   <motion.h3
                     layoutId={`title-${active.title}-${id}`}
                     className="font-medium text-neutral-200 text-base">
-                    {active.title}
+                    Nombre de proyecto
                   </motion.h3>
                   <motion.p
                     layoutId={`description-${active.description}-${id}`}
@@ -118,32 +140,48 @@ export function ExpandableCardDemo() {
       ) : null}
     </AnimatePresence>
     <ul
-      className="mx-auto w-[70vw] lg:w-[70vw] flex flex-row flex-wrap items-center justify-center gap-10">
+      className="mx-auto p-5 w-[85vw] lg:w-[70vw] flex flex-row flex-wrap items-center justify-center gap-10">
       {cards.map((card, index) => (
         <motion.div
-          layoutId={`card-${card.title}-${id}`}
-          key={card.title}
-          onClick={() => setActive(card)}
-          className=" flex flex-col w-full lg:w-[45%] lg:h-[450px] bg-neutral-900 bg-opacity-70 rounded-xl cursor-pointer">
-          <div className="flex gap-4 flex-col  w-full">
-            <motion.div layoutId={`image-${card.title}-${id}`} className="w-full">
+          layoutId={`card-${content.projects[0].name}-${id}`}
+          key={content.projects[0].name}
+          className=" flex flex-col w-[100%] md:w-[45%] lg:h-auto bg-neutral-900/100 rounded-xl overflow-hidden">
+          <div className="flex gap-0 flex-col  w-full">
+            <motion.div layoutId={`image-${content.projects[0].name}-${id}`} className="relative w-full h-[12rem] lg:h-[18rem] group cursor-pointer overflow-hidden" onClick={() => setActive(card)}>
               <Image
-                width={100}
-                height={100}
-                src={card.src}
-                alt={card.title}
-                className="h-60 w-full rounded-lg object-cover object-top" />
+                fill
+                src={content.projects[0].img}
+                alt={content.projects[0].name}
+                className="h-full w-full object-cover tranform group-hover:scale-110 md:group-hover:scale-125 transition ease-in-out duration-200" />
             </motion.div>
-            <div className="flex justify-center items-center flex-col">
+            <div className="flex justify-center items-start flex-col p-5 gap-3">
               <motion.h3
-                layoutId={`title-${card.title}-${id}`}
-                className="font-medium text-gray-50 text-center md:text-left text-base">
-                {card.title}
+                layoutId={`title-${content.projects[0].name}-${id}`}
+                className="font-bold text-gray-50 text-[1.1rem] sm:text-h6 text-wrap md:text-nowrap gap-3 sm:gap-5 rounded-full w-full md:text-left text-base flex flex-row items-center">
+                {content.projects[0].name}
+                <div className="bg-purple-300/80 h-[0.1rem] w-5 sm:w-full" />
+                <a href={content.projects[0].links.gitHubLink} target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4rem" height="1.4rem" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+                </a>
+                <a href={content.projects[0].links.deployLink} target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M28 6h14v14m0 9.474V39a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h9m7.8 16.2L41.1 6.9"/></svg>
+                </a>
               </motion.h3>
               <motion.p
-                layoutId={`description-${card.description}-${id}`}
-                className="text-neutral-400 text-center md:text-left text-base">
-                {card.description}
+                layoutId={`description-${content.projects[0].skills}-${id}`}
+                className="text-gray-400 text-sm1 md:text-[0.9rem] md:text-left text-base">
+                {content.projects[0].skills.map((skill, id) => (
+                    <span key={id}>{`${(id == 0) ? '' : ' - '}${skill}`}</span>
+                ))}
+              </motion.p>
+              <motion.p
+                layoutId={`description-${content.projects[0].intro}-${id}`}
+                className="text-gray-50  text-[0.9rem] md:text-p md:text-left text-wrap flex-row flex-wrap gap-2">
+                {content.projects[0].intro}
+                <span className="text-purple-300 flex flex-row items-center cursor-pointer" onClick={() => setActive(card)}>
+                    {content.action}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="-5 -5 24 24" className="mx-1"><path fill="currentColor" d="m10.586 5.657l-3.95-3.95A1 1 0 0 1 8.05.293l5.657 5.657a.997.997 0 0 1 0 1.414L8.05 13.021a1 1 0 1 1-1.414-1.414l3.95-3.95H1a1 1 0 1 1 0-2z"/></svg>
+                </span>
               </motion.p>
             </div>
           </div>
