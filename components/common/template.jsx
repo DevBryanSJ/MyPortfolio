@@ -109,6 +109,75 @@ const text = {
     },
     projects: {
         title: "Projects",
+        action: "Read more ", 
+        liveProject: "Live Project ",
+        gitHubRepo: "Source Code ",
+        projects: [
+            {
+                name: "Project Name Here 1", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Desarrollé esta aplicación educativa para descubrir exoplanetas, combinando diseño intuitivo y datos científicos en tiempo real. ¡Aprender nunca fue tan fascinante!", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 2", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 3", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 4", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. 🎨", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+        ]
     }, 
 }
 
@@ -253,7 +322,7 @@ export function Projects() {
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="w-full h-auto">
-                    <ExpandableCardDemo />
+                    <ExpandableCardDemo content={text.projects} />
                 </div>
             </section>
         </>
