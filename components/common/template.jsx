@@ -196,7 +196,21 @@ const text = {
                 skills: [
                     'Next.js', 'TailwindCSS', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Instructor'
                 ], 
-            }
+            }, 
+            {
+                name: "Encora", 
+                role: "Spark Internship Member", 
+                time: "June 2024 - August 2024", 
+                location: "Chihuahua, Mexico.", 
+                description: [
+                    "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                    "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                    "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. ", 
+                ], 
+                skills: [
+                    'Next.js', 'TailwindCSS', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Instructor'
+                ], 
+            }, 
         ]
     }
 }
