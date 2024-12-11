@@ -188,13 +188,12 @@ const text = {
                 role: "IT Intern", 
                 time: "August 2024 - At Present", 
                 location: "Chihuahua, Mexico.", 
-                description: [
-                    "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
-                    "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
-                    "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. ", 
+                description: [ 
+                    "Development of their Landing Page so the cluster can have an official web site where they can promote their initiatives and show information and other details directly to the people interested. The design and prototype of the UI was made with Figma, having continuous reunions to ensure approval, and the development was made with Next.js and TailwindCSS.", 
+                    "Also I give technical support and review some projects to give feedback and analysis about the project and how it can be better at UX/UI design and adddtions to the functions of the general project. "
                 ], 
-                skills: [
-                    'Next.js', 'TailwindCSS', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Instructor'
+                skills: [ 
+                    'Next.js', 'TailwindCSS', 'NextUI', 'DaisyUI', 'Git', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Workshop instructor'
                 ], 
             }, 
             {
