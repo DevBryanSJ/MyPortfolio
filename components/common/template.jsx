@@ -189,8 +189,8 @@ const text = {
                 time: "August 2024 - At Present", 
                 location: "Chihuahua, Mexico.", 
                 description: [ 
-                    "Development of their Landing Page so the cluster can have an official web site where they can promote their initiatives and show information and other details directly to the people interested. The design and prototype of the UI was made with Figma, having continuous reunions to ensure approval, and the development was made with Next.js and TailwindCSS.", 
-                    "Also I give technical support and review some projects to give feedback and analysis about the project and how it can be better at UX/UI design and adddtions to the functions of the general project. "
+                    "Development of their Landing Page so the cluster can have an official website where they can promote their initiatives and show information and other details directly to the people interested. The design and prototype of the UI were made with Figma, holding regular meetings to ensure approval, and the development was made with Next.js and TailwindCSS.", 
+                    "Also, I provide technical support and review some projects to give feedback and analysis about the project and how it can be improved in terms of UX/UI design and additions to the functionality of the general project."
                 ], 
                 skills: [ 
                     'Next.js', 'TailwindCSS', 'NextUI', 'DaisyUI', 'Git', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Workshop instructor'
@@ -202,12 +202,12 @@ const text = {
                 time: "June 2024 - August 2024", 
                 location: "Chihuahua, Mexico.", 
                 description: [
-                    "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
-                    "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
-                    "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. ", 
+                    "I was part of the 2024B batch of the Spark Internship Program at Encora, an internship program where participants gain professional training in Full-Stack Development.", 
+                    "I worked on some practice projects and technical tests using JavaScript with React as the main stack for Frontend, and Java with Spring Boot for Backend, gaining experience in creating UI and CRUD APIs.", 
+                    "I also gained some experience with the Databricks Platform, as part of the Machine Learning Associate Certification in the internship program, but I didn't complete the certification." 
                 ], 
                 skills: [
-                    'Next.js', 'TailwindCSS', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Instructor'
+                    'Java', 'Spring Boot', 'JavaScript', 'React', 'IntelliJ', 'Professional English (Writing/Speaking/Listening) ' , 'Effective Communication', 'Giving/Receive Feedback', 
                 ], 
             }, 
         ]
