@@ -3,7 +3,7 @@
 //imports
 import { SpaceButton, IconBtn } from "../ui/buttons";
 import { ExpandableCardDemo } from "../ui/expandableCards";
-import { ExperiencieCards } from "../ui/cards";
+import { ExperiencieCard } from "../ui/cards";
 
 const text = {
     connect: {
@@ -180,6 +180,25 @@ const text = {
             },
         ]
     }, 
+    experiencie: {
+        title: "Experiencie", 
+        jobs: [
+            {
+                name: "Chihuahua IT Cluster", 
+                role: "IT Intern", 
+                time: "August 2024 - At Present", 
+                location: "Chihuahua, Mexico.", 
+                description: [
+                    "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                    "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                    "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. ", 
+                ], 
+                skills: [
+                    'Next.js', 'TailwindCSS', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Instructor'
+                ], 
+            }
+        ]
+    }
 }
 
 export default function HeroSection(){
@@ -324,6 +343,27 @@ export function Projects() {
                 </div>
                 <div className="w-full h-auto">
                     <ExpandableCardDemo content={text.projects} />
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Experiencie(){
+
+    return (
+        <>
+            <section className="flex flex-col items-center justify-center w-full h-auto">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">Experience</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="flex flex-col gap-10 p-5 w-[85vw] lg:w-[70vw]">
+                    {text.experiencie.jobs.map((job, index) => (
+                        <ExperiencieCard 
+                            key={index} name={job.name} role={job.role} time={job.time} location={job.location} description={job.description} skills={job.skills} />
+                    ))}
                 </div>
             </section>
         </>
