@@ -3,6 +3,7 @@
 //imports
 import { SpaceButton, IconBtn } from "../ui/buttons";
 import { ExpandableCardDemo } from "../ui/expandableCards";
+import { ExperiencieCards } from "../ui/cards";
 
 const text = {
     connect: {
