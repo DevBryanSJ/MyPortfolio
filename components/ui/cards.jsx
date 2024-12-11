@@ -1,5 +1,4 @@
-
-
+import Image from "next/image";
 
 export function ExperiencieCard({ name, role, time, location, description, skills }){
 
@@ -31,6 +30,26 @@ export function ExperiencieCard({ name, role, time, location, description, skill
                     {skills.map((skill, index) => (
                         <p key={index} className="text-sm1 sm:text-[0.9rem] rounded-md bg-neutral-600 py-1 px-2">{skill}</p>
                     ))}
+                </div>
+            </div>
+        </>
+    );
+} 
+
+export function ContactCard(){
+
+    return(
+        <>
+            <div className="card glass w-[500px] h-[350px] flex items-center justify-start overflow-hidden ">
+                <div className="w-auto h-auto ring-8 p-2 ring-neutral-500 rounded-full flex items-center justify-center">
+                    <div className="avatar relative w-[18rem] h-[18rem] ring-8 ring-offset-1 ring-neutral-700 rounded-full">
+                        <Image
+                            src="https://unavatar.io/github/StellarDBryan"
+                            alt="That's me!"
+                            fill
+                            className="object-contain mask mask-circle "
+                        />
+                    </div>
                 </div>
             </div>
         </>

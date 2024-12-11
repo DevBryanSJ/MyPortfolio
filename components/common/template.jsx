@@ -3,7 +3,7 @@
 //imports
 import { SpaceButton, IconBtn } from "../ui/buttons";
 import { ExpandableCardDemo } from "../ui/expandableCards";
-import { ExperiencieCard } from "../ui/cards";
+import { ExperiencieCard, ContactCard } from "../ui/cards";
 
 const text = {
     connect: {
@@ -207,10 +207,13 @@ const text = {
                     "I also gained some experience with the Databricks Platform, as part of the Machine Learning Associate Certification in the internship program, but I didn't complete the certification." 
                 ], 
                 skills: [
-                    'Java', 'Spring Boot', 'JavaScript', 'React', 'IntelliJ', 'Professional English (Writing/Speaking/Listening) ' , 'Effective Communication', 'Giving/Receive Feedback', 
+                    'Java', 'Spring Boot', 'JavaScript', 'React', 'IntelliJ', 'Git', 'Medium Blog', 'Professional English (Writing/Speaking/Listening) ' , 'Effective Communication', 'Giving/Receive Feedback', 
                 ], 
             }, 
         ]
+    }, 
+    contact: {
+        title: "Contact Me"
     }
 }
 
@@ -369,7 +372,7 @@ export function Experiencie(){
             <section className="flex flex-col items-center justify-center w-full h-auto">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
-                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">Experience</h2>
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="flex flex-col gap-10 p-5 w-[85vw] lg:w-[70vw]">
@@ -377,6 +380,24 @@ export function Experiencie(){
                         <ExperiencieCard 
                             key={index} name={job.name} role={job.role} time={job.time} location={job.location} description={job.description} skills={job.skills} />
                     ))}
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Contact(){
+
+    return(
+        <>
+            <section className="flex flex-col items-center justify-center w-full h-auto">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">Contact Me!</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="flex flex-col">
+                    <ContactCard />
                 </div>
             </section>
         </>
