@@ -40,14 +40,32 @@ export function ContactCard(){
 
     return(
         <>
-            <div className="card glass w-[500px] h-[350px] flex items-center justify-start overflow-hidden ">
-                <div className="w-auto h-auto ring-8 p-2 ring-neutral-500 rounded-full flex items-center justify-center">
-                    <div className="avatar relative w-[18rem] h-[18rem] ring-8 ring-offset-1 ring-neutral-700 rounded-full">
+            <div className="card w-[550px] h-[300px] bg-neutral-800 flex flex-row items-center justify-center overflow-hidden duration-300 group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_60deg)] shadow-lg hover:shadow-2xl hover:shadow-white shadow-white">
+                <div className="flex flex-col w-full h-full items-start justify-center">
+                    <div className="w-full h-2/5 p-5 flex flex-col justify-center">
+                        <h5 className="text-[1.6rem] text-gray-50 font-extrabold gap-2 whitespace-pre">
+                            <span className="text-neutral-400">Full Stack </span>Developer
+                        </h5>
+                        <h6 className="text-[1.6rem] text-gray-50 font-extrabold gap-2 whitespace-pre">
+                            <span className="text-neutral-400">Bryan </span>Sigala
+                        </h6>
+                    </div>
+                    <div className="w-full h-3/5 bg-neutral-400 p-5 flex flex-col justify-around ">
+                        <button className="btn w-1/2 link bg-gray-50 rounded-xl flex py-2 text-[1.2rem]">
+                            bryansigala@hotmail.com
+                        </button>
+                        <button className="btn w-1/2 link bg-gray-50 rounded-xl flex py-2 text-[1.2rem]">
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+                <div className="w-auto h-auto ring-[16px] p-3 ring-neutral-500 rounded-full absolute -top-1 -right-24 flex items-center justify-center">
+                    <div className="avatar relative w-[19rem] h-[19rem] flex items-center justify-center ring-[16px] ring-neutral-600 bg-inherit rounded-full">
                         <Image
                             src="https://unavatar.io/github/StellarDBryan"
                             alt="That's me!"
                             fill
-                            className="object-contain mask mask-circle "
+                            className="object-contain mask mask-circle bg-inherit"
                         />
                     </div>
                 </div>
