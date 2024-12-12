@@ -1,0 +1,407 @@
+"use client";
+
+//imports
+import { SpaceButton, IconBtn } from "../ui/buttons";
+import { ExpandableCardDemo } from "../ui/expandableCards";
+import { ExperiencieCard, ContactCard } from "../ui/cards";
+
+const text = {
+    connect: {
+        linkedin: {
+            name: 'linkedin',
+            link: "https://www.linkedin.com/in/bryan-sigala/", 
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>,
+        },
+        github: {
+            name: 'github',
+            link: "https://github.com/StellarDBryan",
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
+        }, 
+        x: {
+            name: 'x',
+            link: "https://x.com/BSigala16", 
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clipPath="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
+        }, 
+    },
+    heroSection: {
+        intro: "Hi! I'm ", 
+        iam: "I'm a ",
+        name: 'Bryan Sigala',
+        role: 'Full Stack ', 
+        dev: 'Developer', 
+        description: "In recent years, I've been invested in the IT developing world, more focused on web developing. I find a unique passion in developing detailed, intuitive, and innovative user interfaces (UI) and solutions using technologies to help all kinds of people and their needs. ",
+        contact: 'Contact me',
+    }, 
+    about: {
+        title: "About Me ", 
+        description: {
+            p1: "Hi! I'm Bryan Sigala, a Full-Stack Developer passionate about technology, video games, and unique stories. Even though I’m more focused on web development, I enjoy exploring new ways to combine creativity and functionality in every project I work on.", 
+            p2: "Currently, I’m working at the Chihuahua IT Cluster (CITC), where I’m developing their Landing Page and other key projects to strengthen their technological ecosystem. I also provide technical support to ensure the smooth operation of their technological initiatives.", 
+            p3: "I firmly believe in the power of teamwork. I enjoy helping my teammates improve their technical skills while learning from them as well. I’m also known for listening before speaking, always striving to understand problems from different perspectives to find the best possible solution.", 
+            p4: "I’m inspired by geek culture and works that tell fascinating stories, which influence the way I create projects with impact and creativity. I’m always open to new opportunities and collaborations. If you have something in mind, let’s connect and make it a reality!", 
+        }, 
+        connect_intro: "Connect with Me! ", 
+        toolsTitle: "Work Tools ",
+        workTools: {
+            github: {
+                name: "GitHub", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
+            }, 
+            java: {
+                name: "Java", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m15.638 4.566l.056.032c-.758.4-2.924 1.69-2.924 3.332c0 .554.317 1.088.614 1.59c.262.442.509.858.509 1.238c0 .957-.933 1.7-1.46 2.042l-.1-.058c.199-.243.444-.65.444-1.084c0-.598-.307-1.076-.618-1.561c-.322-.501-.648-1.01-.648-1.67c0-2.292 3.115-3.522 4.127-3.861m-4.095 1.212c1.253-1.12 2.622-2.344 2.622-4.185c0-.833-.341-1.365-.51-1.578L13.6.046c.04.166.1.472.1.872c0 1.676-1.422 2.85-2.798 3.988C9.611 5.974 8.36 7.008 8.36 8.392c0 1.985 1.958 3.206 2.785 3.722l.063.04l.05-.03q-.067-.074-.142-.152c-.636-.677-1.602-1.704-1.602-3.275c0-1.103.974-1.974 2.03-2.919m-.452 9.908c1.764 0 2.998-.253 3.546-.408l.832.48c-.793.403-2.551.71-4.382.71c-2.153 0-4.507-.462-4.514-1.078c-.005-.34.765-.566 1.595-.712l.05.029s-.281.101-.278.333c.004.35 1.42.646 3.15.646m-3.529 2.171c0-.407.839-.6 1.223-.677l.05.03c-.066.049-.102.116-.102.173c0 .267.93.511 2.356.511c1.278 0 1.988-.157 2.41-.258l.99.573c-.045.032-1.02.645-3.402.645c-1.731 0-3.525-.432-3.525-.997m8.529-1.728c1.18-.673 2.361-1.469 2.428-2.747c.044-.839-.727-1.454-1.57-1.29l.045-.112v-.002c.212-.064.474-.116.767-.116c.943 0 1.666.565 1.758 1.356c.186 1.586-2.062 2.618-3.321 2.973zm1.975 2.988c.01 1.09-3.698 1.738-7.012 1.767c-2.861.025-7.474-.515-7.484-1.605c-.006-.753 2-1.274 3.09-1.424l.115.065s-1.625.377-1.62 1.062c.006.683 3.425 1.274 5.894 1.253c3.825-.034 6.414-.657 6.72-1.502l.054-.031c.112.082.24.217.243.415M6.43 21.337a26 26 0 0 0 4.279.325c6.208-.054 7.96-1.58 8.23-1.912l.047.028c-.064 1.208-3.347 2.212-7.396 2.247c-2.061.018-3.937-.22-5.285-.615zm2.602-9.283c-1.079.083-3.396.426-3.396 1.036c0 .462 2.124 1.113 5.452 1.113c2.994 0 4.884-.565 5.325-.78l-.643-.375c-.46.125-2.169.506-4.682.506c-1.48 0-4.03-.273-4.03-.69c0-.374 1.591-.662 2.048-.745l.029-.005z"/></svg>,
+            }, 
+            html: {
+                name: "HTML5", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m3 2l1.578 17.824L12 22l7.467-2.175L21 2zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565l-4.246 1.381l-4.281-1.455l-.288-2.932h2.024l.16 1.411l2.4.815l2.346-.763l.297-3.005H7.416l-.562-6.05h10.412z"/></svg>, 
+            }, 
+            css: {
+                name: "CSS3", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m3 2l1.578 17.834L12 22l7.468-2.165L21 2zm13.3 14.722l-4.293 1.204H12l-4.297-1.204l-.297-3.167h2.108l.15 1.526l2.335.639l2.34-.64l.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506z"/></svg>, 
+            },
+            js: {
+                name: "JavaScript", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><g clipPath="url(#akarIconsJavascriptFill0)"><path fill="currentColor" fillRule="evenodd" d="M0 0h24v24H0zm18.347 20.12c-1.113 0-1.742-.58-2.225-1.37l-1.833 1.065c.662 1.308 2.015 2.306 4.11 2.306c2.142 0 3.737-1.112 3.737-3.143c0-1.883-1.082-2.72-2.998-3.543l-.564-.241c-.968-.42-1.387-.693-1.387-1.37c0-.547.42-.966 1.08-.966c.647 0 1.064.273 1.451.966l1.756-1.127c-.743-1.307-1.773-1.806-3.207-1.806c-2.014 0-3.303 1.288-3.303 2.98c0 1.835 1.08 2.704 2.708 3.397l.564.242c1.029.45 1.642.724 1.642 1.497c0 .646-.597 1.113-1.531 1.113m-8.74-.015c-.775 0-1.098-.53-1.452-1.16l-1.836 1.112c.532 1.126 1.578 2.06 3.383 2.06c1.999 0 3.368-1.063 3.368-3.398v-7.7h-2.255v7.67c0 1.127-.468 1.416-1.209 1.416" clipRule="evenodd"/></g><defs><clipPath id="akarIconsJavascriptFill0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>, 
+            }, 
+            react: {
+                name: "React", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="currentColor"><path d="M21.718 12c0-1.429-1.339-2.681-3.467-3.5c.029-.18.077-.37.1-.545c.217-2.058-.273-3.543-1.379-4.182c-1.235-.714-2.983-.186-4.751 1.239C10.45 3.589 8.7 3.061 7.468 3.773c-1.107.639-1.6 2.124-1.379 4.182c.018.175.067.365.095.545c-2.127.819-3.466 2.071-3.466 3.5s1.339 2.681 3.466 3.5c-.028.18-.077.37-.095.545c-.218 2.058.272 3.543 1.379 4.182c.376.213.803.322 1.235.316a6 6 0 0 0 3.514-1.56a6 6 0 0 0 3.515 1.56a2.44 2.44 0 0 0 1.236-.316c1.106-.639 1.6-2.124 1.379-4.182c-.019-.175-.067-.365-.1-.545c2.132-.819 3.471-2.071 3.471-3.5m-6.01-7.548a1.5 1.5 0 0 1 .76.187c.733.424 1.055 1.593.884 3.212c-.012.106-.043.222-.058.33q-1.263-.365-2.57-.523a16 16 0 0 0-1.747-1.972a4.9 4.9 0 0 1 2.731-1.234m-7.917 8.781c.172.34.335.68.529 1.017s.395.656.6.969a14 14 0 0 1-1.607-.376a14 14 0 0 1 .478-1.61m-.479-4.076a14 14 0 0 1 1.607-.376q-.308.468-.6.969c-.195.335-.357.677-.529 1.017q-.286-.79-.478-1.61M8.3 12a19 19 0 0 1 .888-1.75q.496-.852 1.076-1.65c.619-.061 1.27-.1 1.954-.1q1.025.001 1.952.1a20 20 0 0 1 1.079 1.654q.488.851.887 1.746a19 19 0 0 1-1.953 3.403a19.2 19.2 0 0 1-3.931 0a20 20 0 0 1-1.066-1.653A19 19 0 0 1 8.3 12m7.816 2.25c.2-.337.358-.677.53-1.017q.286.791.478 1.611a15 15 0 0 1-1.607.376c.202-.314.404-.635.597-.97zm.53-3.483c-.172-.34-.335-.68-.53-1.017a20 20 0 0 0-.6-.97q.814.142 1.606.376a14 14 0 0 1-.478 1.611zM12.217 6.34q.6.563 1.13 1.193q-.555-.031-1.129-.033c-.574-.002-.76.013-1.131.033q.53-.63 1.13-1.193m-4.249-1.7a1.5 1.5 0 0 1 .76-.187a4.9 4.9 0 0 1 2.729 1.233A16 16 0 0 0 9.71 7.658q-1.306.158-2.569.524c-.015-.109-.047-.225-.058-.331c-.171-1.619.151-2.787.885-3.211M3.718 12c0-.9.974-1.83 2.645-2.506c.218.857.504 1.695.856 2.506c-.352.811-.638 1.65-.856 2.506C4.692 13.83 3.718 12.9 3.718 12m4.25 7.361c-.734-.423-1.056-1.593-.885-3.212c.011-.106.043-.222.058-.331q1.262.365 2.564.524a16.4 16.4 0 0 0 1.757 1.982c-1.421 1.109-2.714 1.488-3.494 1.037m3.11-2.895q.56.033 1.14.034q.58-.001 1.139-.034a14 14 0 0 1-1.14 1.215a14 14 0 0 1-1.139-1.215m5.39 2.895c-.782.451-2.075.072-3.5-1.038a16 16 0 0 0 1.757-1.981a16.4 16.4 0 0 0 2.565-.523c.015.108.046.224.058.33c.175 1.619-.148 2.789-.88 3.212m1.6-4.854A16.6 16.6 0 0 0 17.216 12q.529-1.22.856-2.507c1.671.677 2.646 1.607 2.646 2.507s-.975 1.83-2.646 2.507z"/><path d="M12.215 13.773a1.792 1.792 0 1 0-1.786-1.8v.006a1.787 1.787 0 0 0 1.786 1.794"/></g></svg>, 
+            }, 
+            nextjs: {
+                name: "Next.js", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M386.399 35.508C217.06-64.061 1.885 57.55.012 253.882c-1.828 191.716 201.063 315.545 370.02 231.163L185.56 213.636v167.997c0 18.614-35.619 18.614-35.619 0V156.421c0-14.776 27.448-15.989 35.226-3.145L395.43 470.572c157.95-101.737 155.817-338.136-9.031-435.064m-23.756 317.939L326.91 298.87V149.458c0-13.932 35.732-13.932 35.732 0z"/></svg>, 
+            }, 
+            tailwindcss: {
+                name: "TailwindCSS", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.31.74 1.91 1.35c.98 1 2.09 2.15 4.59 2.15c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C15.61 7.15 14.5 6 12 6m-5 6c-2.67 0-4.33 1.33-5 4c1-1.33 2.17-1.83 3.5-1.5c.76.19 1.3.74 1.91 1.35C8.39 16.85 9.5 18 12 18c2.67 0 4.33-1.33 5-4c-1 1.33-2.17 1.83-3.5 1.5c-.76-.19-1.3-.74-1.91-1.35C10.61 13.15 9.5 12 7 12"/></svg>, 
+            }, 
+            mySQL: {
+                name: "MySQL", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m24.129 23.412l-.508-.484a6.7 6.7 0 0 0-.809-.891l-.005-.004q-.448-.407-.931-.774q-.387-.266-1.064-.641a1.6 1.6 0 0 1-.818-.824l-.004-.01l-.048-.024c.212-.021.406-.06.592-.115l-.023.006l.57-.157c.236-.074.509-.122.792-.133h.006q.446-.02.847-.139l-.025.006q.194-.048.399-.109t.351-.109v-.169q-.145-.217-.351-.496a2.6 2.6 0 0 0-.443-.468l-.005-.004q-.629-.556-1.303-1.076a16 16 0 0 0-1.311-.916l-.068-.04a5 5 0 0 0-.825-.435l-.034-.012q-.448-.182-.883-.399a1.6 1.6 0 0 0-.327-.119l-.011-.002a.5.5 0 0 1-.29-.169l-.001-.001a3 3 0 0 1-.355-.609l-.008-.02q-.145-.339-.314-.651q-.363-.702-.702-1.427t-.651-1.452q-.217-.484-.399-.967a5.4 5.4 0 0 0-.461-.942l.013.023a17 17 0 0 0-1.331-1.961l.028.038a14.6 14.6 0 0 0-1.459-1.59l-.008-.007a18 18 0 0 0-1.632-1.356l-.049-.035q-.896-.651-1.96-1.282a3.7 3.7 0 0 0-.965-.393l-.026-.006l-1.113-.278l-.629-.048q-.314-.024-.629-.024a1.7 1.7 0 0 1-.387-.279a4 4 0 0 0-.353-.295l-.01-.007a11.7 11.7 0 0 0-2.043-.93L2.071.18A1.36 1.36 0 0 0 .9.096L.909.093a1.36 1.36 0 0 0-.795.84l-.003.01a1.52 1.52 0 0 0 .232 1.549l-.002-.003q.544.725.834 1.14q.217.291.448.605c.141.188.266.403.367.63l.008.021c.056.119.105.261.141.407l.003.016q.048.206.121.448q.217.556.411 1.14c.141.425.297.785.478 1.128l-.019-.04q.145.266.291.52T3.738 9a.9.9 0 0 0 .241.242l.003.002a.4.4 0 0 1 .169.313v.001a1.3 1.3 0 0 0-.217.586l-.001.006a4 4 0 0 1-.153.695l.008-.03a7.1 7.1 0 0 0-.351 2.231q0 .387.04.763l-.003-.031c.06.958.349 1.838.812 2.6l-.014-.025c.197.295.408.552.641.787a.914.914 0 0 0 1.106.203l-.005.002a.93.93 0 0 0 .617-.827v-.002c.048-.474.12-.898.219-1.312l-.013.067a.6.6 0 0 0 .038-.211l-.002-.045v.002q-.012-.109.133-.206v.048q.145.339.302.677t.326.677c.295.449.608.841.952 1.202l-.003-.003a7.7 7.7 0 0 0 1.127 1.001l.022.015q.316.242.566.528l.004.004q.239.28.56.454l.01.005v-.024h.048a.46.46 0 0 0-.18-.205l-.002-.001a2 2 0 0 1-.211-.136l.005.003q-.217-.217-.448-.484t-.423-.508q-.508-.702-.969-1.467t-.871-1.555q-.194-.387-.375-.798t-.351-.798a1 1 0 0 1-.096-.334v-.005a.32.32 0 0 0-.168-.265l-.002-.001a3 3 0 0 1-.408.545l.001-.001a2 2 0 0 0-.382.58l-.005.013a4.3 4.3 0 0 0-.289 1.154l-.002.019q-.072.641-.145 1.318l-.048.024l-.024.024a.86.86 0 0 1-.59-.443l-.002-.005q-.182-.351-.326-.69a6.5 6.5 0 0 1-.423-2.144v-.009a6.2 6.2 0 0 1 .286-2.318l-.012.044q.072-.266.314-.896t.097-.871a.9.9 0 0 0-.265-.41l-.001-.001a3 3 0 0 1-.335-.335l-.003-.004q-.169-.244-.326-.52t-.278-.544a11 11 0 0 1-.474-1.353l-.022-.089a10 10 0 0 0-.546-1.503l.026.064a3.3 3.3 0 0 0-.39-.669l.006.008q-.244-.326-.436-.617q-.244-.314-.484-.605a3.4 3.4 0 0 1-.426-.657l-.009-.02a1.6 1.6 0 0 1-.119-.327l-.002-.011a.4.4 0 0 1 .049-.34l-.001.002a.3.3 0 0 1 .073-.145a.3.3 0 0 1 .143-.072h.002a.55.55 0 0 1 .536-.035l-.003-.001c.219.062.396.124.569.195l-.036-.013q.459.194.847.375c.298.142.552.292.792.459l-.018-.012q.194.121.387.266t.411.291h.339q.387 0 .822.037c.293.023.564.078.822.164l-.024-.007c.481.143.894.312 1.286.515l-.041-.019q.593.302 1.125.641c.589.367 1.098.743 1.577 1.154l-.017-.014c.5.428.954.867 1.38 1.331l.01.012c.416.454.813.947 1.176 1.464l.031.047c.334.472.671 1.018.974 1.584l.042.085a5 5 0 0 1 .234.536l.011.033q.097.278.217.57q.266.605.57 1.221t.57 1.198l.532 1.161c.187.406.396.756.639 1.079l-.011-.015c.203.217.474.369.778.422l.008.001c.368.092.678.196.978.319l-.047-.017c.143.065.327.134.516.195l.04.011c.212.065.396.151.565.259l-.009-.005c.327.183.604.363.868.559l-.021-.015q.411.302.822.57q.194.145.651.423t.484.52a11 11 0 0 0-1.834.087l.056-.006a6 6 0 0 0-1.479.39l.04-.014a2.6 2.6 0 0 1-.388.129l-.019.004a.31.31 0 0 0-.266.277v.001q.093.115.143.26l.002.006q.05.151.125.272l-.003-.006c.119.211.247.393.391.561l-.004-.005q.212.26.476.454l.007.005q.244.194.508.399c.161.126.343.25.532.362l.024.013c.284.174.614.34.958.479l.046.016c.374.15.695.324.993.531l-.016-.011q.291.169.58.375t.556.399q.11.108.191.239l.003.005a.57.57 0 0 0 .36.193h.003v-.048a.5.5 0 0 1-.184-.267l-.001-.004a1 1 0 0 0-.112-.273l.002.004zM5.553 4.207q-.194 0-.363.012a1.3 1.3 0 0 0-.323.063l.009-.003v.024h.048q.097.145.244.326t.266.351l.387.798l.048-.024a.74.74 0 0 0 .252-.321l.002-.005c.052-.139.082-.301.082-.469l-.001-.054v.003a.5.5 0 0 1-.108-.154l-.001-.003l-.081-.182a.5.5 0 0 0-.214-.192l-.003-.001a1 1 0 0 1-.244-.169"/></svg>, 
+            }, 
+            openAI: {
+                name: "OpenAI", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M20.562 10.188c.25-.688.313-1.376.25-2.063c-.062-.687-.312-1.375-.625-2c-.562-.937-1.375-1.687-2.312-2.125c-1-.437-2.063-.562-3.125-.312c-.5-.5-1.063-.938-1.688-1.25S11.687 2 11 2a5.17 5.17 0 0 0-3 .938c-.875.624-1.5 1.5-1.813 2.5c-.75.187-1.375.5-2 .875c-.562.437-1 1-1.375 1.562c-.562.938-.75 2-.625 3.063a5.44 5.44 0 0 0 1.25 2.874a4.7 4.7 0 0 0-.25 2.063c.063.688.313 1.375.625 2c.563.938 1.375 1.688 2.313 2.125c1 .438 2.062.563 3.125.313c.5.5 1.062.937 1.687 1.25S12.312 22 13 22a5.17 5.17 0 0 0 3-.937c.875-.625 1.5-1.5 1.812-2.5a4.54 4.54 0 0 0 1.938-.875c.562-.438 1.062-.938 1.375-1.563c.562-.937.75-2 .625-3.062c-.125-1.063-.5-2.063-1.188-2.876m-7.5 10.5c-1 0-1.75-.313-2.437-.875c0 0 .062-.063.125-.063l4-2.312a.5.5 0 0 0 .25-.25a.57.57 0 0 0 .062-.313V11.25l1.688 1v4.625a3.685 3.685 0 0 1-3.688 3.813M5 17.25c-.438-.75-.625-1.625-.438-2.5c0 0 .063.063.125.063l4 2.312a.56.56 0 0 0 .313.063c.125 0 .25 0 .312-.063l4.875-2.812v1.937l-4.062 2.375A3.7 3.7 0 0 1 7.312 19c-1-.25-1.812-.875-2.312-1.75M3.937 8.563a3.8 3.8 0 0 1 1.938-1.626v4.751c0 .124 0 .25.062.312a.5.5 0 0 0 .25.25l4.875 2.813l-1.687 1l-4-2.313a3.7 3.7 0 0 1-1.75-2.25c-.25-.937-.188-2.062.312-2.937M17.75 11.75l-4.875-2.812l1.687-1l4 2.312c.625.375 1.125.875 1.438 1.5s.5 1.313.437 2.063a3.7 3.7 0 0 1-.75 1.937c-.437.563-1 1-1.687 1.25v-4.75c0-.125 0-.25-.063-.312c0 0-.062-.126-.187-.188m1.687-2.5s-.062-.062-.125-.062l-4-2.313c-.125-.062-.187-.062-.312-.062s-.25 0-.313.062L9.812 9.688V7.75l4.063-2.375c.625-.375 1.312-.5 2.062-.5c.688 0 1.375.25 2 .688c.563.437 1.063 1 1.313 1.625s.312 1.375.187 2.062m-10.5 3.5l-1.687-1V7.063c0-.688.187-1.438.562-2C8.187 4.438 8.75 4 9.375 3.688a3.37 3.37 0 0 1 2.062-.313c.688.063 1.375.375 1.938.813c0 0-.063.062-.125.062l-4 2.313a.5.5 0 0 0-.25.25c-.063.125-.063.187-.063.312zm.875-2L12 9.5l2.187 1.25v2.5L12 14.5l-2.188-1.25z"/></svg>,
+            }, 
+        }, 
+        additionalTitle: "Additional Tools ", 
+        additionalTools: {
+            figma: {
+                name: "Figma", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11.667 2H8.333a3.333 3.333 0 1 0 0 6.667h3.334z" opacity="0.6"/><path fill="currentColor" d="M11.667 8.667H8.333a3.333 3.333 0 0 0 0 6.666h3.334z" opacity="0.4"/><path fill="currentColor" d="M18.333 12a3.333 3.333 0 1 1-6.667 0a3.333 3.333 0 0 1 6.667 0"/><path fill="currentColor" d="M8.333 15.334h3.334v3.333a3.333 3.333 0 1 1-3.334-3.334" opacity="0.2"/><path fill="currentColor" d="M11.666 2h3.333a3.333 3.333 0 1 1 0 6.667h-3.333z" opacity="0.8"/></svg>,
+            }, 
+            photoshop: {
+                name: "Adobe Photoshop", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10.45 10.48a1.3 1.3 0 0 1-1 1.33a4.8 4.8 0 0 1-1.61.19c-.14 0-.15-.09-.15-.19V9.26c0-.07.07-.19.11-.19a4.9 4.9 0 0 1 1.71.11a1.28 1.28 0 0 1 .94 1.3"/><path fill="currentColor" d="M17 2H7a5 5 0 0 0-5 5v10a5 5 0 0 0 5 5h10a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5m-6 11a3.5 3.5 0 0 1-1.68.54H7.98c-.28 0-.28 0-.28.27v2.32c0 .2-.06.26-.26.26H6.12c-.19 0-.24-.07-.24-.25V7.71c0-.2 0-.26.25-.26h3.13a3.34 3.34 0 0 1 1.62.47a2.75 2.75 0 0 1 1.4 2.39A2.83 2.83 0 0 1 11 13m5.92 3.3a4.6 4.6 0 0 1-2.73.19q-.409-.09-.8-.24a.29.29 0 0 1-.16-.2v-1.51c.32.12.62.26.93.36a3.66 3.66 0 0 0 1.61.14q.162-.03.31-.1a.37.37 0 0 0 .08-.63a4 4 0 0 0-.73-.4c-.41-.2-.83-.36-1.22-.59a1.82 1.82 0 0 1-1-1.93a2 2 0 0 1 1.36-1.63a4.2 4.2 0 0 1 2-.17c.32 0 .63.12.95.18c.17 0 .23.14.22.31v1.17c0 .22-.05.24-.25.16a3.87 3.87 0 0 0-2-.34a.9.9 0 0 0-.28.08a.37.37 0 0 0-.1.63q.434.289.91.5c.38.19.78.34 1.15.55a1.73 1.73 0 0 1 1 1.79a1.92 1.92 0 0 1-1.26 1.64z"/></svg>, 
+            }, 
+            canva: {
+                name: "Canva", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12s12-5.373 12-12S18.627 0 12 0M6.962 7.68c.754 0 1.337.549 1.405 1.2c.069.583-.171 1.097-.822 1.406c-.343.171-.48.172-.549.069c-.034-.069 0-.137.069-.206c.617-.514.617-.926.548-1.508c-.034-.378-.308-.618-.583-.618c-1.2 0-2.914 2.674-2.674 4.629c.103.754.549 1.646 1.509 1.646c.308 0 .65-.103.96-.24c.5-.264.799-.47 1.097-.8c-.073-.885.704-2.046 1.851-2.046c.515 0 .926.205.96.583c.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378c-.035-.206-.24-.274-.446-.274c-.72 0-1.131.994-1.029 1.611c.035.275.172.549.447.549c.205 0 .514-.31.617-.755c.068-.308.343-.514.583-.514c.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651c0 .069.034.171.17.171c.092 0 .436-.18.777-.459c.117-.59.253-1.298.253-1.357c.034-.24.137-.48.617-.48c.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994c.172 0 .309.102.309.274c0 .103 0 .274-.069.446c-.137.377-.309.96-.412 1.474c0 .137.035.274.207.274s.685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202c0-.411.035-.754.104-.994c.068-.274.411-.514.617-.514c.103 0 .205.069.205.171c0 .035 0 .103-.034.137c-.137.446-.24.857-.24 1.269c0 .24.034.582.102.788c0 .034.035.069.07.069c.068 0 .548-.445.89-1.028c-.308-.206-.48-.549-.48-.96c0-.72.446-1.097.858-1.097c.343 0 .617.24.617.72c0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24a.3.3 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74c.48 0 .924.205.959.582c.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172s.309-.068.274-.376c-.034-.206-.24-.275-.446-.275c-.686 0-1.13.891-1.028 1.611c.034.275.171.583.445.583c.206 0 .515-.308.652-.754c.068-.274.343-.514.583-.514c.103 0 .17.034.205.171c0 .069 0 .206-.137.652c-.17.308-.171.48-.137.617c.034.274.171.48.309.583c.034.034.068.102.068.102c0 .069-.034.138-.137.138c-.034 0-.068 0-.103-.035c-.514-.205-.72-.548-.789-.891c-.205.24-.445.377-.72.377c-.445 0-.89-.411-.96-.926a1.6 1.6 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.9.9 0 0 1-.377.104c-.068 0-.171-.035-.205-.104c-.095-.152-.156-.392-.193-.667c-.481.527-1.145.805-1.453.805c-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515c-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508c-.308 0-.48-.172-.514-.412c-.206.274-.445.412-.754.412c-.352 0-.696-.24-.862-.593c-.244.275-.523.553-.852.764c-.48.309-1.028.549-1.68.549c-.582 0-1.097-.309-1.371-.583c-.412-.377-.651-.96-.686-1.509c-.205-1.68.823-3.84 2.4-4.8c.378-.205.755-.343 1.132-.343m9.77 3.291c-.104 0-.172.172-.172.343c0 .274.137.583.309.755a1.7 1.7 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z"/></svg>,
+            }, 
+            capcut: {
+                name: "CapCut", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.998 12L2 16c0 1.886 0 2.328.586 2.914S4.114 19.5 6 19.5h8c1.886 0 2.828 0 3.414-.586S18 17.886 18 16m-8.002-4l11.998-6M9.998 12L2 8c0-1.386 0-2.328.586-2.914S4.114 4.5 6 4.5h8c1.886 0 2.828 0 3.414.586S18 6.614 18 8m-8.002 4l11.998 6" color="currentColor"/></svg>, 
+            }, 
+            inshot: {
+                name: "InShot", 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"/><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M5.5 9.611h28.889a4.01 4.01 0 0 1 4 4v18.097m4.111 6.681H13.611a4.01 4.01 0 0 1-4-4v-18.2m0-6.578V5.5m28.778 32.889V42.5"/></svg>,
+            }, 
+        }, 
+    },
+    projects: {
+        title: "Projects",
+        action: "Read more ", 
+        liveProject: "Live Project ",
+        gitHubRepo: "Source Code ",
+        projects: [
+            {
+                name: "Project Name Here 1", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Desarrollé esta aplicación educativa para descubrir exoplanetas, combinando diseño intuitivo y datos científicos en tiempo real. ¡Aprender nunca fue tan fascinante!", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 2", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 3", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+            {
+                name: "Project Name Here 4", 
+                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
+                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
+                intro: "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. 🎨", 
+                description: [
+                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
+                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
+                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    deployLink: 'https://citc.vercel.app/', 
+                }
+            },
+        ]
+    }, 
+    experiencie: {
+        title: "Experiencie", 
+        jobs: [
+            {
+                name: "Chihuahua IT Cluster", 
+                role: "IT Intern", 
+                time: "August 2024 - At Present", 
+                location: "Chihuahua, Mexico.", 
+                description: [ 
+                    "Development of their Landing Page so the cluster can have an official website where they can promote their initiatives and show information and other details directly to the people interested. The design and prototype of the UI were made with Figma, holding regular meetings to ensure approval, and the development was made with Next.js and TailwindCSS.", 
+                    "Also, I provide technical support and review some projects to give feedback and analysis about the project and how it can be improved in terms of UX/UI design and additions to the functionality of the general project."
+                ], 
+                skills: [ 
+                    'Next.js', 'TailwindCSS', 'NextUI', 'DaisyUI', 'Git', 'Atomic Design', 'UI Design', 'Figma', 'Communication', 'Talent recruitment', 'Workshop instructor'
+                ], 
+            }, 
+            {
+                name: "Encora", 
+                role: "Spark Internship Member", 
+                time: "June 2024 - August 2024", 
+                location: "Chihuahua, Mexico.", 
+                description: [
+                    "I was part of the 2024B batch of the Spark Internship Program at Encora, an internship program where participants gain professional training in Full-Stack Development.", 
+                    "I worked on some practice projects and technical tests using JavaScript with React as the main stack for Frontend, and Java with Spring Boot for Backend, gaining experience in creating UI and CRUD APIs.", 
+                    "I also gained some experience with the Databricks Platform, as part of the Machine Learning Associate Certification in the internship program, but I didn't complete the certification." 
+                ], 
+                skills: [
+                    'Java', 'Spring Boot', 'JavaScript', 'React', 'IntelliJ', 'Git', 'Medium Blog', 'Professional English (Writing/Speaking/Listening) ' , 'Effective Communication', 'Giving/Receive Feedback', 
+                ], 
+            }, 
+        ]
+    }, 
+    contact: {
+        title: "Contact Me"
+    }
+}
+
+export default function HeroSection(){
+
+    return (
+        <>
+            <div className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-hidden bg-[#060108]">
+                <div className="flex flex-col items-start h-screen w-full pl-[15vw] sm:pl-0 gap-y-2 sm:gap-y-0 sm:w-[80vw] md:w-[60vw] lg:ml-[5%] justify-center text-gray-100 z-20 bg-gradient-to-r from-[#060108] from-20% sm:from-50% md:from-40% lg:from-70%">
+                    <h1 className="lg:text-[4rem] text-h4 sm:text-h3 md:text-h2 xl:text-[5rem]  font-extrabold">
+                        {text.heroSection.intro}
+                        <span className="text-purple-300">
+                            {text.heroSection.name}
+                        </span>
+                    </h1>
+                    <h2 className="text-h6 sm:text-h5 font-semibold">
+                        {text.heroSection.iam}
+                        <span className="text-purple-300">
+                            {text.heroSection.role}
+                        </span>
+                        {text.heroSection.dev}
+                    </h2>
+                    <p className="text-sm1 md:text-p font-medium max-w-[70%] sm:max-w-[60%] lg:max-w-[60%]">
+                        {text.heroSection.description}
+                    </p>
+                    <SpaceButton>
+                        {text.heroSection.contact}
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" className="transform group-hover:translate-x-2 transition-all ease-in-out duration-200">
+                            <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+                                <path strokeDasharray="20" strokeDashoffset="20" d="M3 12h17.5">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/>
+                                </path>
+                                <path strokeDasharray="12" strokeDashoffset="12" d="M21 12l-7 7M21 12l-7 -7">
+                                    <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/>
+                                </path>
+                            </g>
+                        </svg>
+                    </SpaceButton>
+                </div>
+                <div className="absolute inset-0 ml-auto h-full w-[80vw] sm:w-[60vw] md:w-[60vw] flex justify-end items-center">
+                    <video 
+                        src="https://cdn.pixabay.com/video/2024/09/03/229467_large.mp4" autoPlay loop muted
+                        className="object-cover w-full h-full opacity-90 md:opacity-70 lg:opacity-90 filter brightness-110 sm:brightness-125"
+                    />
+                </div>
+            </div>
+        </>
+    );
+}
+
+export function About(){
+
+    return(
+        <>
+            <section className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="flex flex-row w-[85vw] lg:w-[70vw] h-auto items-center justify-around ">
+                    <div className="flex flex-col md:flex-row justify-start items-center h-auto p-5 gap-10">
+                        <div className="flex flex-col w-full md:w-[55%] h-auto text-sm1 md:text-[0.9rem] lg:text-[1.05rem] font-medium text-gray-50 gap-y-5">
+                            <div className="w-full h-auto flex flex-col gap-y-4">
+                                {Object.values(text.about.description).map((p, index) => (
+                                    <p key={index}>{p}</p>
+                                ))}
+                            </div>
+                            <div className="flex flex-row items-center justify-start gap-3">
+                                <p className="flex flex-row text-purple-300 font-semibold gap-x-1 md:gap-x-3 items-center">
+                                    {text.about.connect_intro}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
+                                            <path strokeDasharray="20" strokeDashoffset="20" d="M3 12h17.5">
+                                                <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/>
+                                            </path>
+                                            <path strokeDasharray="12" strokeDashoffset="12" d="M21 12l-7 7M21 12l-7 -7">
+                                                <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="12;0"/>
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </p>
+                                <div className="flex flex-row -space-x-3 md:space-x-0 md:gap-0 items-center w-auto h-auto">
+                                    <IconBtn name={text.connect.linkedin.name} link={text.connect.linkedin.link} icon={text.connect.linkedin.icon} />
+                                    <IconBtn name={text.connect.github.name} link={text.connect.github.link} icon={text.connect.github.icon} />
+                                    <IconBtn name={text.connect.x.name} link={text.connect.x.link} icon={text.connect.x.icon} />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex flex-col w-full md:w-[40%] h-full md:p-5  text-gray-50 ">
+                            <div className="flex flex-col items-center justify-center gap-y-10">
+                                <div className="flex flex-col w-full justify-start items-start gap-y-5">
+                                    <h5 className="text-h6 lg:text-h5 font-bold flex flex-row items-center gap-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 1024 1024" className="text-purple-300">
+                                            <path fill="currentColor" 
+                                                d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32M513.1 518.1l-192 161c-5.2 4.4-13.1.7-13.1-6.1v-62.7c0-2.3 1.1-4.6 2.9-6.1L420.7 512l-109.8-92.2a7.63 7.63 0 0 1-2.9-6.1V351c0-6.8 7.9-10.5 13.1-6.1l192 160.9c3.9 3.2 3.9 9.1 0 12.3M716 673c0 4.4-3.4 8-7.5 8h-185c-4.1 0-7.5-3.6-7.5-8v-48c0-4.4 3.4-8 7.5-8h185c4.1 0 7.5 3.6 7.5 8z"/>
+                                        </svg>
+                                        {text.about.toolsTitle}
+                                    </h5>
+                                    <div className="flex flex-row flex-wrap gap-1 lg:gap-2 w-full h-auto">
+                                        {Object.values(text.about.workTools).map((tool, index) => (
+                                            <span key={index} 
+                                                className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-2 transform scale-90 lg:scale-100">
+                                                {tool.icon}{tool.name}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="flex flex-col w-full justify-start items-start gap-y-5">
+                                    <h5 className="text-h6 lg:text-h5 font-bold flex flex-row items-center gap-x-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 384 512" className="text-purple-300">
+                                        <path fill="currentColor" 
+                                            d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c19.8 27.1 39.7 54.4 49.2 86.2h160zm-80 128c44.2 0 80-35.8 80-80v-16H112v16c0 44.2 35.8 80 80 80m-80-336c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80"/>
+                                    </svg>
+                                        {text.about.additionalTitle}
+                                    </h5>
+                                    <div className="flex flex-row flex-wrap gap-1 lg:gap-2 w-full h-auto">
+                                        {Object.values(text.about.additionalTools).map((tool, index) => (
+                                            <span key={index} 
+                                                className="text-p rounded-md bg-neutral-700 py-1 px-2 flex flex-row items-center justify-center gap-2 transform scale-90 lg:scale-100">
+                                                {tool.icon}{tool.name}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Projects() {
+
+    return (
+        <>
+            <section className="w-full h-auto flex flex-col items-center justify-center">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="w-full h-auto">
+                    <ExpandableCardDemo content={text.projects} />
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Experiencie(){
+
+    return (
+        <>
+            <section className="flex flex-col items-center justify-center w-full h-auto">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="flex flex-col gap-10 p-5 w-[85vw] lg:w-[70vw]">
+                    {text.experiencie.jobs.map((job, index) => (
+                        <ExperiencieCard 
+                            key={index} name={job.name} role={job.role} time={job.time} location={job.location} description={job.description} skills={job.skills} />
+                    ))}
+                </div>
+            </section>
+        </>
+    );
+}
+
+export function Contact(){
+
+    return(
+        <>
+            <section className="flex flex-col items-center justify-center w-full h-auto p-10 gap-10">
+                <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
+                    <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
+                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">Contact Me!</h2>
+                    <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
+                </div>
+                <div className="flex flex-col">
+                    <div className="transform scale-[0.65] sm:scale-100 object-contain">
+                        <ContactCard />
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
