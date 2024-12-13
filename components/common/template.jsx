@@ -417,7 +417,7 @@ export function Contact(){
                 </div>
                 <div className="flex flex-col lg:flex-row w-full h-auto items-center gap-2 md:gap-5">
                     <div className="flex flex-col items-center  text-gray-50 font-medium text-h5 text-center gap-3">
-                        <div className="flex flex-col items-center">
+                        <div className="flex flex-col items-center text-h6">
                             <span className="font-bold">
                                 {text.contact.content[0]}
                             </span>
