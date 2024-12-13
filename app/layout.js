@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { GridBackgroundDemo } from "@/components/common/gridBackground";
-import Navbar from "@/components/ui/navbar";
+import Navbar, {MobileNav} from "@/components/ui/navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -43,6 +43,7 @@ export default function RootLayout({ children }) {
       >
         <header>
           <Navbar content={content.text} cvText={content.cvText} cvLink={content.cvLink} socialLinks={content.socialLinks} />
+          <MobileNav />
         </header>
         <GridBackgroundDemo />
         {children}
