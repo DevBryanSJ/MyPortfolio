@@ -287,7 +287,7 @@ export function About(){
 
     return(
         <>
-            <section id="about" className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
+            <section id="about" className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
@@ -370,7 +370,7 @@ export function Projects() {
 
     return (
         <>
-            <section id="projects" className="w-full h-auto flex flex-col items-center justify-center">
+            <section id="projects" className="w-full h-auto flex flex-col items-center justify-center pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
@@ -388,7 +388,7 @@ export function Experience(){
 
     return (
         <>
-            <section id="experience" className="flex flex-col items-center justify-center w-full h-auto">
+            <section id="experience" className="flex flex-col items-center justify-center w-full h-auto pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
@@ -409,7 +409,7 @@ export function Contact(){
 
     return(
         <>
-            <section id="contact" className="flex flex-col items-center justify-center w-full h-auto p-10 gap-10">
+            <section id="contact" className="flex flex-col items-center justify-center w-full h-auto gap-10 p-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.contact.title}</h2>
