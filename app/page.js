@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full h-auto space-y-16 pb-20">
+      <div className="w-full h-auto pb-20">
         <HeroSection />
         <About />
         <Projects />
