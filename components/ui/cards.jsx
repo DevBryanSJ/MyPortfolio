@@ -40,7 +40,7 @@ export function ContactCard({ role, dev, firstName, secondName, mailIntro, email
 
     return(
         <>
-            <div className="card w-[550px] h-[300px] bg-neutral-800 flex flex-row items-center justify-center overflow-hidden duration-300 group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_60deg)]  hover:shadow-2xl hover:shadow-white shadow-white">
+            <div className="card w-[550px] h-[300px] bg-neutral-800 flex flex-row items-center justify-center overflow-hidden duration-300 group hover:-rotate-0 [transform:rotate3d(1_,-1,_1,_60deg)] shadow-lg  hover:shadow-2xl hover:shadow-purple-400 shadow-purple-400">
                 <div className="flex flex-col w-full h-full items-start justify-center">
                     <div className="w-full h-2/5 p-5 flex flex-col justify-center">
                         <h5 className="text-[1.6rem] text-gray-50 font-extrabold gap-2 whitespace-pre">
