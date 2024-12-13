@@ -115,67 +115,111 @@ const text = {
         gitHubRepo: "Source Code ",
         projects: [
             {
-                name: "Project Name Here 1", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Desarrollé esta aplicación educativa para descubrir exoplanetas, combinando diseño intuitivo y datos científicos en tiempo real. ¡Aprender nunca fue tan fascinante!", 
+                name: "Travelly", 
+                img: '/images/travelly_img.png',
+                skills: ['Git', 'GitHub', 'HTML5', 'CSS3', 'TailwindCSS', 'DaisyUI', 'UI Design', 'Responsive Design', 'Ideas proposal'], 
+                intro: "I developed a web site focused on give information about travel destinations as part of my first module of the Full Stack Fundations Diploma I've been taking lately.", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This projects was part of my first exam at the Full Stack Foundations Diploma I've been taking at the Living Lab CUU, where the students were able to use only HTML5 and CSS3 as part of the first module focused on the foundations of web development. ", 
+                    "My main proposal was a web site where the people can get information about travel destinations and why these are special places to explore, adding features like wheather or main topic of the destinations as filters to those people who aren't sure where to go", 
+                    "This web site was developed using CDNs to use TailwindCSS framework and DaisyUI library, besides there isn't JavaScript to give functionality, so this web site only work on the visual. "
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    gitHubLink: 'https://github.com/StellarDBryan/FSF_M1_Proyecto', 
+                    deployLink: 'https://stellardbryan.github.io/FSF_M1_Proyecto/', 
+                }
+            },
+            {
+                name: "CITC Landing Page", 
+                img: '/images/citc_img.png',
+                skills: ['Next.js', 'NextUI', 'TailwindCSS', 'DaisyUI', 'Git', 'Requirements gathering/analysis', 'UI Design', 'Figma', 'Communication'], 
+                intro: "I developed the CITC Landing Page so the Cluster can have their official site where they can give information to the people interested and promote their initiatives. ", 
+                description: [
+                    "As part of my internship at the Chihuahua IT Cluster, I developed their Landing Page because the CITC wanted to have more visualization through an official web site. ", 
+                    "The Landing Page needed to show every department in the CITC and their services and support to the IT community in the region. I sent the first month in the UI design with Figma and the next 2 months in the development of the web site. ", 
+                    "The web site was developed with Next.js for frontend development, TailwindCSS and DaisyUI library for the UI design, adding Framer Motion libray to give attractive animations to the web site. ",
+                ],
+                links: {
+                    intro: "Project Links ", 
                     deployLink: 'https://citc.vercel.app/', 
                 }
             },
             {
-                name: "Project Name Here 2", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                name: "ExoFinder", 
+                img: '/images/exofinder_img.png',
+                skills: ['UI Design', 'Figma', 'Next.js', 'NextUI', 'TailwindCSS', 'Git', 'Framer Motion', 'Networking', 'Pitch', 'Team management', 'Teamwork', 'Communication'], 
+                intro: "ExoFider is a web application where the people can access to offical information about exoplanets discovered from official sources of the NASA. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This project was built as my team's proposal at the NASA SPACE APPS Hackathon 2024, and our track was about the education or share information about exo-planets discovered by the NASA. ", 
+                    "Our proposal was a web application where the students can access to different data and stats from different exo-planets, taking care of the information sources we were adding in our application. In this platform the people can get information about exo-planets and articles from investigators across the world. ", 
+                    "We built our demo at least to the frontend with Next.js and TailwindCSS, using NextUI and Framer Motion for attractive animations of the UI. Taking support from AI technology to turn up ideas and using images in our platform. ",
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JesusPalacios24/gomitasGalacticas', 
+                    deployLink: 'https://gomitas-galacticas.vercel.app', 
                 }
             },
             {
-                name: "Project Name Here 3", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                name: "UniTalent", 
+                img: '/images/unitalent_img.png',
+                skills: ['Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'UI design', 'Figma', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A web application where the students can access to opportunities with enterprises so they can develop projects for their social service or internship. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This project was for my Cloud Computing class at the major in collaboration with the Living Lab CUU who gace us the proposal. Because the students strugle often searching enterprsies or institutes where they can do their Social Service or Internship.",
+                    "So the idea was to built a platform where the students can access offers and get in touch with the enterprises in a more easy way where they can do their social service or internship. Something like LinkedIn, but exclusive for student community. ", 
+                    "This platform was built with Next.js for frontend development with MongoDB for backend development, and the previous design and prototype was made with Figma. ", 
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JorgeLP2112/BrokenArrow', 
+                    deployLink: 'https://broken-arrow.vercel.app', 
                 }
             },
             {
-                name: "Project Name Here 4", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. 🎨", 
+                name: "AstraVT", 
+                img: '/images/astravt_img.png',
+                skills: ['Next.js', 'TailwindCSS', 'Networking', 'Business Canva Implementation', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "AstraVT was built by me and other friends as part of the Genius Arena Hackathon, at Talent Land 2024. We participate at the AstraZeneca track, where the challenge was to built an interactive tour of AstraZeneca offices.", 
+                    "Our proposal was to built a platform where the employees at AstraZeneca can login and start a 3D virtual tour of the office where the employee can explore the environtment of the office and also get information about the person who is in charge of an specific department. ", 
+                    "I made a little of the HUD in Godot, and made the Business Canva for our proposal and write our pitch and write the documentation of the project. ",
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JorgeLP2112/Comets', 
+                    deployLink: 'https://comets-chi.vercel.app', 
+                }
+            },
+            {
+                name: "Irrigation System", 
+                img: '/images/irrigationsystem_img.png',
+                skills: ['UI Design', 'Figma', 'Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'Electrical components', 'Architecture Implementation', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
+                description: [
+                    "Me and some friends built an automated irrigation system for my university as my Social Service project. We had the built an archtitecture that can irrigate the grass of the institute in an automated way. ", 
+                    "The project needed to implement the circuit and this had to be controlled by a web application from a desktop device, and also controlled by mobile. So we begin the development with a progressive web application. ", 
+                    "The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
+                ],
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan/RiegoTec2-Web', 
+                }
+            },
+            {
+                name: "SurveyMaker", 
+                img: '/images/surveymaker_img.png',
+                skills: ['UI Design', 'Figma', 'Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'Electrical components', 'Architecture Implementation', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
+                description: [
+                    "Me and some friends built an automated irrigation system for my university as my Social Service project. We had the built an archtitecture that can irrigate the grass of the institute in an automated way. ", 
+                    "The project needed to implement the circuit and this had to be controlled by a web application from a desktop device, and also controlled by mobile. So we begin the development with a progressive web application. ", 
+                    "The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
+                ],
+                links: {
+                    intro: "Project Links ",
                 }
             },
         ]
