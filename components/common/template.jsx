@@ -230,7 +230,7 @@ const text = {
             email: "bryansigala@hotmail.com", 
             emailLink: "mailto:bryansigala@hotmail.com",
             cvText: "Download CV Here ",
-            cvLink: "",
+            cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
         },
         ending: "Let’s connect and make your ideas a reality!",
     }

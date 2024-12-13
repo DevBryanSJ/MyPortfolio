@@ -27,7 +27,7 @@ const content = {
     contact: "Contact"
   },
   cvText: "Download CV", 
-  cvLink: "",
+  cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/bryan-sigala/", 
     github: "https://github.com/StellarDBryan", 
