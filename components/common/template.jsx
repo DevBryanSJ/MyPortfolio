@@ -240,7 +240,7 @@ export default function HeroSection(){
 
     return (
         <>
-            <div id="HeroSection" className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-x-hidden bg-[#060108]">
+            <div id="hero_section" className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-x-hidden bg-[#060108]">
                 <div className="flex flex-col items-start h-screen w-full pl-[15vw] sm:pl-0 gap-y-2 sm:gap-y-0 sm:w-[80vw] md:w-[60vw] lg:ml-[5%] justify-center text-gray-100 z-20 bg-gradient-to-r from-[#060108] from-20% sm:from-50% md:from-40% lg:from-70%">
                     <h1 className="lg:text-[4rem] text-h4 sm:text-h3 md:text-h2 xl:text-[5rem]  font-extrabold">
                         {text.heroSection.intro}
@@ -258,7 +258,7 @@ export default function HeroSection(){
                     <p className="text-sm1 md:text-p font-medium max-w-[70%] sm:max-w-[60%] lg:max-w-[60%]">
                         {text.heroSection.description}
                     </p>
-                    <SpaceButton>
+                    <SpaceButton link="/#contact">
                         {text.heroSection.contact}
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" className="transform group-hover:translate-x-2 transition-all ease-in-out duration-200">
                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -287,7 +287,7 @@ export function About(){
 
     return(
         <>
-            <section id="AboutMe" className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
+            <section id="about" className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
@@ -370,10 +370,10 @@ export function Projects() {
 
     return (
         <>
-            <section id="Projects" className="w-full h-auto flex flex-col items-center justify-center">
+            <section id="projects" className="w-full h-auto flex flex-col items-center justify-center">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
-                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
+                    <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="w-full h-auto">
@@ -388,7 +388,7 @@ export function Experience(){
 
     return (
         <>
-            <section id="Experience" className="flex flex-col items-center justify-center w-full h-auto">
+            <section id="experience" className="flex flex-col items-center justify-center w-full h-auto">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
@@ -409,7 +409,7 @@ export function Contact(){
 
     return(
         <>
-            <section id="Contact" className="flex flex-col items-center justify-center w-full h-auto p-10 gap-10">
+            <section id="contact" className="flex flex-col items-center justify-center w-full h-auto p-10 gap-10">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
                     <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.contact.title}</h2>
