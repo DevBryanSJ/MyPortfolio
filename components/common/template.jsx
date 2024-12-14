@@ -10,19 +10,19 @@ const text = {
         linkedin: {
             name: 'linkedin',
             link: "https://www.linkedin.com/in/bryan-sigala/", 
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>,
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>,
         },
         github: {
             name: 'github',
             link: "https://github.com/StellarDBryan",
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
         }, 
         x: {
             name: 'x',
             link: "https://x.com/BSigala16", 
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.6em" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clipPath="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
+            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clipPath="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
         }, 
-    },
+    }, 
     heroSection: {
         intro: "Hi! I'm ", 
         iam: "I'm a ",
@@ -115,73 +115,115 @@ const text = {
         gitHubRepo: "Source Code ",
         projects: [
             {
-                name: "Project Name Here 1", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Desarrollé esta aplicación educativa para descubrir exoplanetas, combinando diseño intuitivo y datos científicos en tiempo real. ¡Aprender nunca fue tan fascinante!", 
+                name: "Travelly", 
+                img: '/images/travelly_img.png',
+                skills: ['Git', 'GitHub', 'HTML5', 'CSS3', 'TailwindCSS', 'DaisyUI', 'UI Design', 'Responsive Design', 'Ideas proposal'], 
+                intro: "I developed a web site focused on give information about travel destinations as part of my first module of the Full Stack Fundations Diploma I've been taking lately.", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This projects was part of my first exam at the Full Stack Foundations Diploma I've been taking at the Living Lab CUU, where the students were able to use only HTML5 and CSS3 as part of the first module focused on the foundations of web development. ", 
+                    "My main proposal was a web site where the people can get information about travel destinations and why these are special places to explore, adding features like wheather or main topic of the destinations as filters to those people who aren't sure where to go", 
+                    "This web site was developed using CDNs to use TailwindCSS framework and DaisyUI library, besides there isn't JavaScript to give functionality, so this web site only work on the visual. "
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
+                    gitHubLink: 'https://github.com/StellarDBryan/FSF_M1_Proyecto', 
+                    deployLink: 'https://stellardbryan.github.io/FSF_M1_Proyecto/', 
+                }
+            },
+            {
+                name: "CITC Landing Page", 
+                img: '/images/citc_img.png',
+                skills: ['Next.js', 'NextUI', 'TailwindCSS', 'DaisyUI', 'Git', 'Requirements gathering/analysis', 'UI Design', 'Figma', 'Communication'], 
+                intro: "I developed the CITC Landing Page so the Cluster can have their official site where they can give information to the people interested and promote their initiatives. ", 
+                description: [
+                    "As part of my internship at the Chihuahua IT Cluster, I developed their Landing Page because the CITC wanted to have more visualization through an official web site. ", 
+                    "The Landing Page needed to show every department in the CITC and their services and support to the IT community in the region. I sent the first month in the UI design with Figma and the next 2 months in the development of the web site. ", 
+                    "The web site was developed with Next.js for frontend development, TailwindCSS and DaisyUI library for the UI design, adding Framer Motion libray to give attractive animations to the web site. ",
+                ],
+                links: {
+                    intro: "Project Links ", 
                     deployLink: 'https://citc.vercel.app/', 
                 }
             },
             {
-                name: "Project Name Here 2", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Diseñé esta herramienta para optimizar el flujo de trabajo de los desarrolladores, integrando funciones clave y un diseño enfocado en la productividad.", 
+                name: "ExoFinder", 
+                img: '/images/exofinder_img.png',
+                skills: ['UI Design', 'Figma', 'Next.js', 'NextUI', 'TailwindCSS', 'Git', 'Framer Motion', 'Networking', 'Pitch', 'Team management', 'Teamwork', 'Communication'], 
+                intro: "ExoFider is a web application where the people can access to offical information about exoplanets discovered from official sources of the NASA. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This project was built as my team's proposal at the NASA SPACE APPS Hackathon 2024, and our track was about the education or share information about exo-planets discovered by the NASA. ", 
+                    "Our proposal was a web application where the students can access to different data and stats from different exo-planets, taking care of the information sources we were adding in our application. In this platform the people can get information about exo-planets and articles from investigators across the world. ", 
+                    "We built our demo at least to the frontend with Next.js and TailwindCSS, using NextUI and Framer Motion for attractive animations of the UI. Taking support from AI technology to turn up ideas and using images in our platform. ",
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JesusPalacios24/gomitasGalacticas', 
+                    deployLink: 'https://gomitas-galacticas.vercel.app', 
                 }
             },
             {
-                name: "Project Name Here 3", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Un sitio web diseñado para crear experiencias de viaje personalizadas, con ofertas irresistibles y una interfaz fluida.", 
+                name: "UniTalent", 
+                img: '/images/unitalent_img.png',
+                skills: ['Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'UI design', 'Figma', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A web application where the students can access to opportunities with enterprises so they can develop projects for their social service or internship. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "This project was for my Cloud Computing class at the major in collaboration with the Living Lab CUU who gace us the proposal. Because the students strugle often searching enterprsies or institutes where they can do their Social Service or Internship.",
+                    "So the idea was to built a platform where the students can access offers and get in touch with the enterprises in a more easy way where they can do their social service or internship. Something like LinkedIn, but exclusive for student community. ", 
+                    "This platform was built with Next.js for frontend development with MongoDB for backend development, and the previous design and prototype was made with Figma. ", 
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JorgeLP2112/BrokenArrow', 
+                    deployLink: 'https://broken-arrow.vercel.app', 
                 }
             },
             {
-                name: "Project Name Here 4", 
-                img: 'https://img.freepik.com/foto-gratis/desarrollador-independiente-sonriente-oficina-casa-haciendo-programacion-computadora_482257-83067.jpg?t=st=1733804942~exp=1733808542~hmac=153d62befc9fa0967c3e240310736281db72ba0775f4086a0dfd8a33dba79deb&w=1060',
-                skills: ['Next.js', 'TailwindCSS', 'HTML5', 'CSS3', 'DaisyUI', 'Teamwork', 'Communication'], 
-                intro: "Una plataforma interactiva para crear gráficos personalizados, pensada para artistas y diseñadores en movimiento. 🎨", 
+                name: "AstraVT", 
+                img: '/images/astravt_img.png',
+                skills: ['Next.js', 'TailwindCSS', 'Networking', 'Business Canva Implementation', 'Git', 'Teamwork', 'Communication'], 
+                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
                 description: [
-                    "Exo-Finder es una aplicación educativa creada para facilitar la exploración de exoplanetas fuera de nuestro sistema solar. Su objetivo es hacer que el aprendizaje sobre astronomía sea accesible y atractivo, utilizando datos científicos y una interfaz intuitiva.", 
-                    "El proyecto fue desarrollado utilizando Next.js para la construcción del front-end, Tailwind CSS para estilizar la interfaz y OpenAI API para proporcionar información en tiempo real. Además, integré MySQL para gestionar la base de datos y asegurar un rendimiento eficiente.", 
-                    "A lo largo del desarrollo, enfoqué los esfuerzos en la usabilidad y en un diseño responsivo, adaptado para usuarios en dispositivos móviles y de escritorio. Este proyecto destaca por combinar creatividad y tecnología, proporcionando una experiencia educativa inmersiva.", 
+                    "AstraVT was built by me and other friends as part of the Genius Arena Hackathon, at Talent Land 2024. We participate at the AstraZeneca track, where the challenge was to built an interactive tour of AstraZeneca offices.", 
+                    "Our proposal was to built a platform where the employees at AstraZeneca can login and start a 3D virtual tour of the office where the employee can explore the environtment of the office and also get information about the person who is in charge of an specific department. ", 
+                    "I made a little of the HUD in Godot, and made the Business Canva for our proposal and write our pitch and write the documentation of the project. ",
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan', 
-                    deployLink: 'https://citc.vercel.app/', 
+                    gitHubLink: 'https://github.com/JorgeLP2112/Comets', 
+                    deployLink: 'https://comets-chi.vercel.app', 
                 }
+            },
+            {
+                name: "Irrigation System", 
+                img: '/images/irrigationsystem_img.png',
+                skills: ['UI Design', 'Figma', 'Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'Electrical components', 'Architecture Implementation', 'Git', 'Teamwork', 'Communication'], 
+                intro: "An automated irrigation system for my university that can be controlled by a progressive web application to function in desktop and mobile devices.", 
+                description: [
+                    "Me and some friends built an automated irrigation system for my university as my Social Service project. We had the built an archtitecture that can irrigate the grass of the institute in an automated way. ", 
+                    "The project needed to implement the circuit and this had to be controlled by a web application from a desktop device, and also controlled by mobile. So we begin the development with a progressive web application. ", 
+                    "The circuit was made with a microchip ESP32 and mutliple sensors for humidity and temperature. The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
+                ], 
+                links: {
+                    intro: "Project Links ",
+                    gitHubLink: 'https://github.com/StellarDBryan/RiegoTec2-Web', 
+                }
+            },
+            {
+                name: "SurveyMaker", 
+                img: '/images/surveymaker_img.png',
+                skills: ['Requirements gathering/analysis', 'Business Canva Model', 'Team management', 'Pitch presentation', 'Teamwork', 'Communication'], 
+                intro: "A web platform where you can give a topic or problematic to the platform and this generates with AI a survey that help to gather information about your problem. ", 
+                description: [
+                    "This project was our team proposal at the Hack Knights - AI CHALLENGE Hackathon 2023, from StartUp Chihuahua. ", 
+                    "Our proposal consist in a web application that generates surveys from a certain problem or topic you need, also you could give the certain amount of questions you need in your survey, but in our demo this last feauture isn't available. ", 
+                    "For this project was used Next.js and TailwincCSS, my contribution was the implemetation of the Business Canva Model and Pitch presentation for our proposal at the judges, back in the day I was strugling very often with programming skills. ",
+                ], 
+                links: {}
             },
         ]
     }, 
     experiencie: {
-        title: "Experiencie", 
+        title: "Experience", 
         jobs: [
             {
                 name: "Chihuahua IT Cluster", 
@@ -213,7 +255,26 @@ const text = {
         ]
     }, 
     contact: {
-        title: "Contact Me"
+        title: "Contact Me!",
+        content: [
+            "Looking for someone who’s committed and creative? ", 
+            "I’d love to help bring your ideas to life.",
+            "Feel free to reach out via email or connect with me on social media.", 
+            "Also, I leave you my contact card right here!"
+        ], 
+        mobileMessage: "(Click the card to watch it)",
+        card: {
+            role: "Full Stack ",
+            dev: "Developer", 
+            firstName: "Bryan ", 
+            secondName: "Sigala",
+            mailIntro: "Mail me at: ", 
+            email: "bryansigala@hotmail.com", 
+            emailLink: "mailto:bryansigala@hotmail.com",
+            cvText: "Download CV Here ",
+            cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
+        },
+        ending: "Let’s connect and make your ideas a reality!",
     }
 }
 
@@ -221,7 +282,7 @@ export default function HeroSection(){
 
     return (
         <>
-            <div className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-hidden bg-[#060108]">
+            <div id="hero_section" className="w-full h-screen flex items-start sm:px-[10vw] md:px-10 overflow-x-hidden bg-[#060108]">
                 <div className="flex flex-col items-start h-screen w-full pl-[15vw] sm:pl-0 gap-y-2 sm:gap-y-0 sm:w-[80vw] md:w-[60vw] lg:ml-[5%] justify-center text-gray-100 z-20 bg-gradient-to-r from-[#060108] from-20% sm:from-50% md:from-40% lg:from-70%">
                     <h1 className="lg:text-[4rem] text-h4 sm:text-h3 md:text-h2 xl:text-[5rem]  font-extrabold">
                         {text.heroSection.intro}
@@ -239,7 +300,7 @@ export default function HeroSection(){
                     <p className="text-sm1 md:text-p font-medium max-w-[70%] sm:max-w-[60%] lg:max-w-[60%]">
                         {text.heroSection.description}
                     </p>
-                    <SpaceButton>
+                    <SpaceButton link="/#contact">
                         {text.heroSection.contact}
                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24" className="transform group-hover:translate-x-2 transition-all ease-in-out duration-200">
                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
@@ -268,7 +329,7 @@ export function About(){
 
     return(
         <>
-            <section className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center">
+            <section id="about" className="w-full h-auto flex flex-col items-end py-5 pr-5 md:pr-0 md:items-center justify-center pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.about.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
@@ -323,9 +384,8 @@ export function About(){
                                 </div>
                                 <div className="flex flex-col w-full justify-start items-start gap-y-5">
                                     <h5 className="text-h6 lg:text-h5 font-bold flex flex-row items-center gap-x-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 384 512" className="text-purple-300">
-                                        <path fill="currentColor" 
-                                            d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4c19.8 27.1 39.7 54.4 49.2 86.2h160zm-80 128c44.2 0 80-35.8 80-80v-16H112v16c0 44.2 35.8 80 80 80m-80-336c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" className="text-purple-300">
+                                        <path fill="currentColor" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/>
                                     </svg>
                                         {text.about.additionalTitle}
                                     </h5>
@@ -351,10 +411,10 @@ export function Projects() {
 
     return (
         <>
-            <section className="w-full h-auto flex flex-col items-center justify-center">
+            <section id="projects" className="w-full h-auto flex flex-col items-center justify-center pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
-                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
+                    <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.projects.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="w-full h-auto">
@@ -365,14 +425,14 @@ export function Projects() {
     );
 }
 
-export function Experiencie(){
+export function Experience(){
 
     return (
         <>
-            <section className="flex flex-col items-center justify-center w-full h-auto">
+            <section id="experience" className="flex flex-col items-center justify-center w-full h-auto pt-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
-                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
+                    <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.experiencie.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
                 <div className="flex flex-col gap-10 p-5 w-[85vw] lg:w-[70vw]">
@@ -390,16 +450,58 @@ export function Contact(){
 
     return(
         <>
-            <section className="flex flex-col items-center justify-center w-full h-auto p-10 gap-10">
+            <section id="contact" className="flex flex-col items-center justify-center w-full h-auto gap-10 p-16">
                 <div className="flex flex-col md:flex-row w-[85vw] lg:w-[70vw] md:h-[10vh] px-5 md:p-5 gap-2 md:gap-10 items-start md:items-center justify-center ">
                     <div className="hidden md:inline h-[0.2rem] w-full rounded-full bg-purple-300" />
-                    <h2   h2 className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">Contact Me!</h2>
+                    <h2  className="text-h4 md:text-h3 lg:text-h2 font-extrabold text-gray-50 text-nowrap">{text.contact.title}</h2>
                     <div className="h-[0.2rem] w-full rounded-full bg-purple-300" />
                 </div>
-                <div className="flex flex-col">
-                    <div className="transform scale-[0.65] sm:scale-100 object-contain">
-                        <ContactCard />
+                <div className="flex flex-col lg:flex-row w-full h-auto items-center gap-2 md:gap-5">
+                    <div className="flex flex-col items-center  text-gray-50 font-medium text-h5 text-center gap-3">
+                        <div className="flex flex-col items-center text-h6">
+                            <span className="font-bold">
+                                {text.contact.content[0]}
+                            </span>
+                            <span className="font-medium">
+                                {text.contact.content[1]}
+                            </span>
+                        </div>
+                        <div className="flex flex-row gap-5 justify-center items-center">
+                            <span className="font-medium text-h6 sm:w-[50%] md:w-[40%] lg:w-[60%] text-center">
+                                {text.contact.content[2]}
+                            </span>
+                            <div className="flex flex-col sm:flex-row sm:-space-x-3 sm:items-center sm:justify-center sm:space-y-0 -space-y-2 md:space-y-0 md:space-x-0 md:gap-0 items-center md:items-center justify-center w-auto h-auto">
+                                <IconBtn name={text.connect.linkedin.name} link={text.connect.linkedin.link} icon={text.connect.linkedin.icon} />
+                                <IconBtn name={text.connect.github.name} link={text.connect.github.link} icon={text.connect.github.icon} />
+                                <IconBtn name={text.connect.x.name} link={text.connect.x.link} icon={text.connect.x.icon} />
+                            </div>
+                        </div>
+                        <span className="text-[1.1rem] md:text-h5 font-semibold text-center">
+                            {text.contact.content[3]}
+                        </span>
+                        <span className="text-p inline md:hidden md:text-h5 font-medium text-center">
+                            {text.contact.mobileMessage}
+                        </span>
+                        <span className="text-h4 font-bold text-center text-purple-300 hidden lg:inline">
+                            {text.contact.ending}
+                        </span>
                     </div>
+                    <div className="transform scale-[0.65] sm:scale-[0.8] lg:scale-100 object-contain">
+                        <ContactCard
+                            role={text.contact.card.role}
+                            dev={text.contact.card.dev}
+                            firstName={text.contact.card.firstName}
+                            secondName={text.contact.card.secondName}
+                            mailIntro={text.contact.card.mailIntro}
+                            email={text.contact.card.email}
+                            emailLink={text.contact.card.emailLink}
+                            cvText={text.contact.card.cvText}
+                            cvLink={text.contact.card.cvLink}
+                        />
+                    </div>
+                    <span className="text-h4 font-bold text-center text-purple-300 inline lg:hidden">
+                        {text.contact.ending}
+                    </span>
                 </div>
             </section>
         </>

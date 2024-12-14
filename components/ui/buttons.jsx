@@ -3,19 +3,21 @@ import styled from 'styled-components';
 
 //-------------------------------------------------- SPACE BUTTON---------------------------------------
 
-export const SpaceButton = ({ children }) => {
+export const SpaceButton = ({ children, link }) => {
   return (
     <StyledWrapper>
-      <button type="button" className="btn py-3 px-6 flex flex-row w-auto group mt-1 sm:mt-5 md:mt-5 lg:mt-5 transform scale-75 sm:scale-90 ">
-        <strong className='w-auto flex flex-row items-center gap-x-2 -mt-1'>{children}</strong>
-        <div id="container-stars">
-          <div id="stars" />
-        </div>
-        <div id="glow">
-          <div className="circle" />
-          <div className="circle" />
-        </div>
-      </button>
+      <a href={link}>
+        <button type="button" className="btn py-3 px-6 flex flex-row w-auto group mt-1 sm:mt-5 md:mt-5 lg:mt-5 transform scale-75 sm:scale-90 ">
+          <strong className='w-auto flex flex-row items-center gap-x-2 -mt-1'>{children}</strong>
+          <div id="container-stars">
+            <div id="stars" />
+          </div>
+          <div id="glow">
+            <div className="circle" />
+            <div className="circle" />
+          </div>
+        </button>
+      </a>
     </StyledWrapper>
   );
 }
