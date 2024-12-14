@@ -197,12 +197,12 @@ const text = {
                 name: "Irrigation System", 
                 img: '/images/irrigationsystem_img.png',
                 skills: ['UI Design', 'Figma', 'Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'Electrical components', 'Architecture Implementation', 'Git', 'Teamwork', 'Communication'], 
-                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
+                intro: "An automated irrigation system for my university that can be controlled by a progressive web application to function in desktop and mobile devices.", 
                 description: [
                     "Me and some friends built an automated irrigation system for my university as my Social Service project. We had the built an archtitecture that can irrigate the grass of the institute in an automated way. ", 
                     "The project needed to implement the circuit and this had to be controlled by a web application from a desktop device, and also controlled by mobile. So we begin the development with a progressive web application. ", 
-                    "The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
-                ],
+                    "The circuit was made with a microchip ESP32 and mutliple sensors for humidity and temperature. The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
+                ], 
                 links: {
                     intro: "Project Links ",
                     gitHubLink: 'https://github.com/StellarDBryan/RiegoTec2-Web', 
@@ -211,16 +211,14 @@ const text = {
             {
                 name: "SurveyMaker", 
                 img: '/images/surveymaker_img.png',
-                skills: ['UI Design', 'Figma', 'Next.js', 'TailwindCSS', 'Requirements gathering/analysis', 'Electrical components', 'Architecture Implementation', 'Git', 'Teamwork', 'Communication'], 
-                intro: "A virtual tour on the web for those employees at AstraZeneca who get lost at the office or doesn't know the person which is in charge of an specific department. ", 
+                skills: ['Requirements gathering/analysis', 'Business Canva Model', 'Team management', 'Pitch presentation', 'Teamwork', 'Communication'], 
+                intro: "A web platform where you can give a topic or problematic to the platform and this generates with AI a survey that help to gather information about your problem. ", 
                 description: [
-                    "Me and some friends built an automated irrigation system for my university as my Social Service project. We had the built an archtitecture that can irrigate the grass of the institute in an automated way. ", 
-                    "The project needed to implement the circuit and this had to be controlled by a web application from a desktop device, and also controlled by mobile. So we begin the development with a progressive web application. ", 
-                    "The design of the entire UI of the project was made by me, and the wep application was built with Next.js and TailwindCSS, but back in the day we didn't know much about the use of TailwindCSS so we use basic CSS3 instead. The project didn't finish because happened some complications with the institute's water systems, also we didn't deploy the project correctly at that time. ",
-                ],
-                links: {
-                    intro: "Project Links ",
-                }
+                    "This project was our team proposal at the Hack Knights - AI CHALLENGE Hackathon 2023, from StartUp Chihuahua. ", 
+                    "Our proposal consist in a web application that generates surveys from a certain problem or topic you need, also you could give the certain amount of questions you need in your survey, but in our demo this last feauture isn't available. ", 
+                    "For this project was used Next.js and TailwincCSS, my contribution was the implemetation of the Business Canva Model and Pitch presentation for our proposal at the judges, back in the day I was strugling very often with programming skills. ",
+                ], 
+                links: {}
             },
         ]
     }, 
