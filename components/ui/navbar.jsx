@@ -1,5 +1,7 @@
 "use client";
 
+import { NavSectionBtn } from "../atoms/buttons/navSectionBtn";
+
 export default function Navbar({ content, cvText, cvLink, socialLinks}){
 
     return (
@@ -12,26 +14,18 @@ export default function Navbar({ content, cvText, cvLink, socialLinks}){
                         </button>
                     </a>
                     <div className="hidden md:flex flex-row flex-wrap lg:flex-nowrap w-auto justify-around gap-2 lg:gap-5">
-                        <a href="/#about">
-                            <button className="w-auto h-1/3 md:h-auto btn bg-inherit hover:bg-inherit text-gray-50 sm:text-[0.9rem] lg:text-h6 shadow-none border-0 border-purple-300 rounded-none p-2 hover:border-b-2 hover:border-purple-300 hover:text-purple-300 focus:border-b-2 focus:border-purple-300 focus:text-purple-300">
-                                {content.about}
-                            </button>
-                        </a>
-                        <a href="/#projects">
-                            <button className="w-auto h-1/3 md:h-auto btn bg-inherit hover:bg-inherit text-gray-50 sm:text-[0.9rem] lg:text-h6 shadow-none border-0 border-purple-300 rounded-none p-2 hover:border-b-2 hover:border-purple-300 hover:text-purple-300 focus:border-b-2 focus:border-purple-300 focus:text-purple-300">
-                                {content.projects}
-                            </button>
-                        </a>
-                        <a href="/#experience">
-                            <button className="w-auto h-1/3 md:h-auto btn bg-inherit hover:bg-inherit text-gray-50 sm:text-[0.9rem] lg:text-h6 shadow-none border-0 border-purple-300 rounded-none p-2 hover:border-b-2 hover:border-purple-300 hover:text-purple-300 focus:border-b-2 focus:border-purple-300 focus:text-purple-300">
-                                {content.experience}
-                            </button>
-                        </a>
-                        <a href="/#contact">
-                            <button className="w-auto h-1/3 md:h-auto btn bg-inherit hover:bg-inherit text-gray-50 sm:text-[0.9rem] lg:text-h6 shadow-none border-0 border-purple-300 rounded-none p-2 hover:border-b-2 hover:border-purple-300 hover:text-purple-300 focus:border-b-2 focus:border-purple-300 focus:text-purple-300">
-                                {content.contact}
-                            </button>
-                        </a>
+                        <NavSectionBtn link={`/#about`}>
+                            {content.about}
+                        </NavSectionBtn>
+                        <NavSectionBtn link={`/#projects`}>
+                            {content.projects}
+                        </NavSectionBtn>
+                        <NavSectionBtn link={`/#experience`}>
+                            {content.experience}
+                        </NavSectionBtn>
+                        <NavSectionBtn link={`/#contact`}>
+                            {content.contact}
+                        </NavSectionBtn>
                     </div>
                     <div className="flex flex-row justify-end md:justify-around space-x-2 md:space-x-0 gap-2 sm:gap-1 lg:gap-3 w-full md:w-auto">
                         <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
