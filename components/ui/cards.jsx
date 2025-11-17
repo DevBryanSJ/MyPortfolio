@@ -74,7 +74,7 @@ export function ContactCard({ role, dev, firstName, secondName, mailIntro, email
                 <div className="w-auto h-auto ring-[16px] p-3 ring-neutral-500 rounded-full absolute -top-1 -right-24 flex items-center justify-center">
                     <div className="avatar relative w-[19rem] h-[19rem] flex items-center justify-center ring-[16px] ring-neutral-600 bg-inherit rounded-full">
                         <Image
-                            src="https://unavatar.io/github/StellarDBryan" 
+                            src="https://unavatar.io/github/DevBryanSJ" 
                             alt="That's me!" 
                             fill
                             className="object-contain mask mask-circle bg-inherit" 

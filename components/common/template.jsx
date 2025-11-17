@@ -14,7 +14,7 @@ const text = {
         },
         github: {
             name: 'github',
-            link: "https://github.com/StellarDBryan",
+            link: "https://github.com/DevBryanSJ",
             icon: <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
         }, 
         x: {
@@ -27,15 +27,15 @@ const text = {
         intro: "Hi! I'm ", 
         iam: "I'm a ",
         name: 'Bryan Sigala',
-        role: 'Full Stack ', 
-        dev: 'Developer', 
+        role: 'Full-Stack ', 
+        dev: 'Engineer', 
         description: "In recent years, I've been invested in the IT developing world, more focused on web developing. I find a unique passion in developing detailed, intuitive, and innovative user interfaces (UI) and solutions using technologies to help all kinds of people and their needs. ",
         contact: 'Contact me',
     }, 
     about: {
         title: "About Me ", 
         description: {
-            p1: "Hi! I'm Bryan Sigala, a Full-Stack Developer passionate about technology, video games, and unique stories. Even though I’m more focused on web development, I enjoy exploring new ways to combine creativity and functionality in every project I work on.", 
+            p1: "Hi! I'm Bryan Sigala, a Full-Stack Engineer passionate about technology, video games, and unique stories. Even though I’m more focused on web development, I enjoy exploring new ways to combine creativity and functionality in every project I work on.", 
             p2: "Currently, I’m working at the Chihuahua IT Cluster (CITC), where I’m developing their Landing Page and other key projects to strengthen their technological ecosystem. I also provide technical support to ensure the smooth operation of their technological initiatives.", 
             p3: "I firmly believe in the power of teamwork. I enjoy helping my teammates improve their technical skills while learning from them as well. I’m also known for listening before speaking, always striving to understand problems from different perspectives to find the best possible solution.", 
             p4: "I’m inspired by geek culture and works that tell fascinating stories, which influence the way I create projects with impact and creativity. I’m always open to new opportunities and collaborations. If you have something in mind, let’s connect and make it a reality!", 
@@ -126,8 +126,8 @@ const text = {
                 ],
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan/FSF_M1_Proyecto', 
-                    deployLink: 'https://stellardbryan.github.io/FSF_M1_Proyecto/', 
+                    gitHubLink: 'https://github.com/DevBryanSJ/FSF_M1_Proyecto', 
+                    deployLink: 'https://devbryansj.github.io/FSF_M1_Proyecto/', 
                 }
             },
             {
@@ -205,7 +205,7 @@ const text = {
                 ], 
                 links: {
                     intro: "Project Links ",
-                    gitHubLink: 'https://github.com/StellarDBryan/RiegoTec2-Web', 
+                    gitHubLink: 'https://github.com/DevBryanSJ/RiegoTec2-Web', 
                 }
             },
             {
@@ -264,8 +264,8 @@ const text = {
         ], 
         mobileMessage: "(Click the card to watch it)",
         card: {
-            role: "Full Stack ",
-            dev: "Developer", 
+            role: "Full-Stack ",
+            dev: "Engineer", 
             firstName: "Bryan ", 
             secondName: "Sigala",
             mailIntro: "Mail me at: ", 
