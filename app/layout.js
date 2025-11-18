@@ -26,7 +26,7 @@ const content = {
     experience: "Experience",
     contact: "Contact",
   },
-  cvText: "Download CV",
+  cvText: "Resume",
   cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/bryan-sigala/",

@@ -16,12 +16,7 @@ const text = {
             name: 'github',
             link: "https://github.com/DevBryanSJ",
             icon: <svg xmlns="http://www.w3.org/2000/svg" width="42px" height="42px" viewBox="0 0 24 24" className="svgIcontwit"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>,
-        }, 
-        x: {
-            name: 'x',
-            link: "https://x.com/BSigala16", 
-            icon: <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14" className="svgIcontwit"><g fill="none"><g clipPath="url(#primeTwitter0)"><path fill="currentColor" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z"/></g><defs><clipPath id="primeTwitter0"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></g></svg>,
-        }, 
+        }
     }, 
     heroSection: {
         intro: "Hi! I'm ", 
@@ -35,9 +30,9 @@ const text = {
     about: {
         title: "About Me ", 
         description: {
-            p1: "Hi! I'm Bryan Sigala, a Full-Stack Engineer passionate about technology, video games, and unique stories. Even though I’m more focused on web development, I enjoy exploring new ways to combine creativity and functionality in every project I work on.", 
-            p2: "Currently, I’m working at the Chihuahua IT Cluster (CITC), where I’m developing their Landing Page and other key projects to strengthen their technological ecosystem. I also provide technical support to ensure the smooth operation of their technological initiatives.", 
-            p3: "I firmly believe in the power of teamwork. I enjoy helping my teammates improve their technical skills while learning from them as well. I’m also known for listening before speaking, always striving to understand problems from different perspectives to find the best possible solution.", 
+            p1: "Hi! I'm Bryan Sigala, a Full-Stack Engineer passionate about technology, video games, and unique stories. Even though I’m more focused on web development, I enjoy exploring new ways to combine creativity, functionality and usefulness in every project I work on.", 
+            p2: "Currently, I’m working as a Full-Stack Engineer at Intelectix Services as part of their Custom Development Team, where I've developed solutions with the Angular and .NET stack, along with Desktop stack with WinForms and handling payments with Stripe services. ", 
+            p3: "I firmly believe in the power of teamwork and the guidance of good practices. I enjoy helping my teammates improve their tech skills while learning from them as well. I’m also known for listening before speaking, to understand problems from different perspectives to find the best possible solution.", 
             p4: "I’m inspired by geek culture and works that tell fascinating stories, which influence the way I create projects with impact and creativity. I’m always open to new opportunities and collaborations. If you have something in mind, let’s connect and make it a reality!", 
         }, 
         connect_intro: "Connect with Me! ", 
@@ -69,7 +64,7 @@ const text = {
             }, 
             ts: {
                 name: "TypeScript", 
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><g clip-path="url(#SVGXv8lpc2Y)"><path fill="currentColor" d="M23.429 0H.57A.57.57 0 0 0 0 .571V23.43a.57.57 0 0 0 .571.571H23.43a.57.57 0 0 0 .571-.571V.57a.57.57 0 0 0-.572-.57m-9.143 12.826h-2.857v8.888H9.143v-8.888H6.286v-1.969h8zm.64 8.38v-2.375s1.298.978 2.855.978s1.497-1.018 1.497-1.158c0-1.477-4.412-1.477-4.412-4.751c0-4.452 6.429-2.695 6.429-2.695l-.08 2.116s-1.078-.719-2.296-.719s-1.657.58-1.657 1.198c0 1.597 4.452 1.438 4.452 4.652c0 4.95-6.788 2.755-6.788 2.755"/></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>, 
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none"><g clipPath="url(#SVGXv8lpc2Y)"><path fill="currentColor" d="M23.429 0H.57A.57.57 0 0 0 0 .571V23.43a.57.57 0 0 0 .571.571H23.43a.57.57 0 0 0 .571-.571V.57a.57.57 0 0 0-.572-.57m-9.143 12.826h-2.857v8.888H9.143v-8.888H6.286v-1.969h8zm.64 8.38v-2.375s1.298.978 2.855.978s1.497-1.018 1.497-1.158c0-1.477-4.412-1.477-4.412-4.751c0-4.452 6.429-2.695 6.429-2.695l-.08 2.116s-1.078-.719-2.296-.719s-1.657.58-1.657 1.198c0 1.597 4.452 1.438 4.452 4.652c0 4.95-6.788 2.755-6.788 2.755"/></g><defs><clipPath id="SVGXv8lpc2Y"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>, 
             }, 
             react: {
                 name: "React", 
@@ -258,9 +253,23 @@ const text = {
         title: "Experience", 
         jobs: [
             {
+                name: "Intelectix Services", 
+                role: "Full-Stack Engineer", 
+                time: "January 2025 - At Present", 
+                location: "Chihuahua, Mexico.", 
+                description: [ 
+                    "I built an application for managing withholding tax invoices issued by the SAT (tax authority in Mexico), from SQL Server Architechture to UI design using Bootstrap framework. ", 
+                    "Using Angular 19 for the Frontend, implementing third-party services using Angular Observables for async operations and BehaviourSubject to handle states on the UI. Also implement payment method registration using Stripe services. ", 
+                    "For Backend was used ASP.NET Core (v9.0) framework, alongside with Entity Framework Core for the SQL Server architechture design. Following the Minimal API pattern from .NET Core without controllers for the endpoints, managing access policies and JWT authentication. And also implement Stripe services to handle subscription payments and buying with Stripe SDK for .NET. "
+                ], 
+                skills: [ 
+                    'TypeScript', 'Angular', 'C#', '.NET', 'Bootstrap', 'Git', 'Stripe', 'JWT Authetication', 'Access Policies', 'Agile Development', 'Atomic Design', 'UI Design', 'Communication'
+                ], 
+            }, 
+            {
                 name: "Chihuahua IT Cluster", 
                 role: "IT Intern", 
-                time: "August 2024 - At Present", 
+                time: "August 2024 - December 2024", 
                 location: "Chihuahua, Mexico.", 
                 description: [ 
                     "Development of their Landing Page so the cluster can have an official website where they can promote their initiatives and show information and other details directly to the people interested. The design and prototype of the UI were made with Figma, holding regular meetings to ensure approval, and the development was made with Next.js and TailwindCSS.", 
@@ -271,7 +280,7 @@ const text = {
                 ], 
             }, 
             {
-                name: "Encora", 
+                name: "Encora Inc.", 
                 role: "Spark Internship Member", 
                 time: "June 2024 - August 2024", 
                 location: "Chihuahua, Mexico.", 
@@ -294,7 +303,7 @@ const text = {
             "Feel free to reach out via email or connect with me on social media.", 
             "Also, I leave you my contact card right here!"
         ], 
-        mobileMessage: "(Click the card to watch it)",
+        mobileMessage: "(Tab the card to watch it)",
         card: {
             role: "Full-Stack ",
             dev: "Engineer", 
@@ -303,7 +312,7 @@ const text = {
             mailIntro: "Mail me at: ", 
             email: "bryansigala@hotmail.com", 
             emailLink: "mailto:bryansigala@hotmail.com",
-            cvText: "Download CV Here ",
+            cvText: "Resume Here ",
             cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
         },
         ending: "Let’s connect and make your ideas a reality!",
@@ -504,7 +513,6 @@ export function Contact(){
                             <div className="flex flex-col sm:flex-row sm:-space-x-3 sm:items-center sm:justify-center sm:space-y-0 -space-y-2 md:space-y-0 md:space-x-0 md:gap-0 items-center md:items-center justify-center w-auto h-auto">
                                 <IconBtn name={text.connect.linkedin.name} link={text.connect.linkedin.link} icon={text.connect.linkedin.icon} />
                                 <IconBtn name={text.connect.github.name} link={text.connect.github.link} icon={text.connect.github.icon} />
-                                <IconBtn name={text.connect.x.name} link={text.connect.x.link} icon={text.connect.x.icon} />
                             </div>
                         </div>
                         <span className="text-[1.1rem] md:text-h5 font-semibold text-center">
