@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { GridBackgroundDemo } from "@/components/common/gridBackground";
-import Navbar, {MobileNav} from "@/components/ui/navbar";
+import Navbar, { MobileNav } from "@/components/ui/navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,16 +24,16 @@ const content = {
     about: "About Me",
     projects: "Projects",
     experience: "Experience",
-    contact: "Contact"
+    contact: "Contact",
   },
-  cvText: "Download CV", 
+  cvText: "Resume",
   cvLink: "https://1drv.ms/b/s!AlaSeCzDrH5_ii_2OVyhzCM2bA3J?e=hs6uYD",
   socialLinks: {
-    linkedin: "https://www.linkedin.com/in/bryan-sigala/", 
-    github: "https://github.com/StellarDBryan", 
+    linkedin: "https://www.linkedin.com/in/bryan-sigala/",
+    github: "https://github.com/DevBryanSJ",
     x: "https://x.com/BSigala16",
-  }
-}
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -42,7 +42,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         <header>
-          <Navbar content={content.text} cvText={content.cvText} cvLink={content.cvLink} socialLinks={content.socialLinks} />
+          <Navbar
+            content={content.text}
+            cvText={content.cvText}
+            cvLink={content.cvLink}
+            socialLinks={content.socialLinks}
+          />
           <MobileNav />
         </header>
         <GridBackgroundDemo />
